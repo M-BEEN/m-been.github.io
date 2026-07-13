@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  루트 사이트맵 인덱스.
+  실제 글 목록은 Hugo 가 생성하는 /blog-kr/sitemap.xml 에 있고, 이 파일은 그것을 가리키기만 한다.
+  robots.txt 와 ads.txt 처럼 sitemap 도 루트에서 제출해야 도메인 전체가 색인되므로 인덱스를 둔다.
+  글이 추가돼도 이 파일은 고칠 필요가 없다 (하위 sitemap 이 자동 갱신됨).
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://m-been.github.io/blog-kr/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
