@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{- $posts := where .Site.RegularPages "Section" "posts" }}
+{{- $reports := where $posts "Params.isreport" true }}
+{{- $latest := "" }}{{ if gt (len $reports) 0 }}{{ $latest = index $reports 0 }}{{ end }}
+
+<section class="home-hero">
+  <h1>오늘의 증시, 한 그릇에 담았습니다</h1>
+  <p>매일 아침 코스피·코스닥과 해외 지수, 주도주, 매매 인사이트를 5분 안에 스캔하세요.</p>
+</section>
+
+{{- with $latest }}
+<section style="padding:4px 0 8px">
+  <div class="snap-grid">
+    {{- range first 4 .Params.snapshot }}
+    <div class="snap">
+      <div class="snap__name">{{ .name }} <span class="tk">{{ .ticker }}</span></div>
+      <div class="snap__val num">{{ .value }}</div>
+      <div class="snap__chg {{ .dir }}"><span class="num">{{ .abs }}</span><span class="pct num">{{ .pct }}</span></div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+<div class="section-label"><h2>오늘의 리포트</h2><a class="more" href="{{ "posts/" | relURL }}">전체 보기 →</a></div>
+<div class="feat-grid">
+  <a class="feat-card lg" href="{{ .RelPermalink }}">
+    <div>
+      <div class="post-row__meta">
+        <span class="badge badge--cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+        <span>{{ .Date.Format "2006.01.02" }}</span><span class="sep"></span><span>읽기 {{ .Params.reading }}분</span>
+      </div>
+      <h3>{{ .Title }}</h3>
+      <p class="post-row__excerpt">{{ .Params.lede | truncate 130 }}</p>
+    </div>
+    <div style="display:flex;gap:22px;margin-top:18px">
+      {{- range first 3 .Params.snapshot }}<div class="kv" style="text-align:left"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>{{ end }}
+    </div>
+  </a>
+  {{- $rest := after 1 $reports }}
+  {{- if gt (len $rest) 0 }}
+  <div class="feat-side">
+    {{- range first 2 $rest }}
+    <a class="feat-card" href="{{ .RelPermalink }}">
+      <div class="post-row__meta"><span class="badge badge--cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span><span>{{ .Date.Format "2006.01.02" }}</span></div>
+      <h3>{{ .Title }}</h3>
+      <p class="post-row__excerpt">{{ .Params.lede | truncate 90 }}</p>
+    </a>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>
+{{- end }}
+
+{{- $archive := $posts }}
+{{- if $latest }}{{ $archive = $posts | first 999 | after 1 }}{{ end }}
+{{- if gt (len $archive) 0 }}
+<div class="section-label"><h2>지난 보고서</h2><a class="more" href="{{ "posts/" | relURL }}">아카이브 →</a></div>
+<div class="post-list">
+  {{- range $archive }}
+  <a class="post-row" href="{{ .RelPermalink }}">
+    <div class="post-row__main">
+      <div class="post-row__meta">
+        {{- with .Params.categories }}<span class="badge badge--cat">{{ index . 0 }}</span>{{ end }}
+        <span>{{ .Date.Format "2006.01.02" }}</span>
+        {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
+      </div>
+      <h3 class="post-row__title">{{ .Title }}</h3>
+      <p class="post-row__excerpt">{{ cond (ne .Params.lede "") .Params.lede .Description | truncate 110 }}</p>
+    </div>
+    {{- if .Params.snapshot }}
+    <div class="post-row__mini">
+      {{- range first 2 .Params.snapshot }}<div class="kv"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>{{ end }}
+    </div>
+    {{- end }}
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+{{ end }}

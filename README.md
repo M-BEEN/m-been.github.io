@@ -1,41 +1,49 @@
-# m-been.github.io
+# 한국증시 레시피
 
-GitHub Pages **User Page** — 루트 도메인(`https://m-been.github.io`)을 담당한다.
+한국 증시 일일 보고서·주간 분석·투자 상식 — **https://m-been.github.io/**
 
-블로그 본체는 [M-BEEN/blog-kr](https://github.com/M-BEEN/blog-kr) 이며 `https://m-been.github.io/blog-kr/` 로 배포된다.
-이 저장소는 콘텐츠를 갖지 않고, **루트에서만 유효한 파일들**을 서빙하는 역할만 한다.
+Hugo + GitHub Pages(User Page). 콘텐츠는 `report-service`(self-hosted-stack)가 매 거래일
+아침 `content/posts/` 에 Markdown 을 push 하면 Actions 가 빌드·배포한다.
 
-## 왜 필요한가
+## 왜 이 저장소인가 (blog-kr 에서 이전)
 
-`ads.txt`, `robots.txt`, 그리고 검색엔진에 제출하는 `sitemap.xml` 은 **도메인 루트에서만 유효**하다.
-`/blog-kr/ads.txt` 처럼 하위 경로에 두면 크롤러와 AdSense가 읽지 않는다.
-Project Page(blog-kr) 만으로는 루트를 점유할 수 없어 별도의 User Page 저장소가 필요하다.
+원래 `M-BEEN/blog-kr` 에서 `m-been.github.io/blog-kr/` 로 서빙했는데, 서브디렉터리라
+**구글이 사이트 이름을 지정할 수 없었다**(사이트명은 도메인 단위로만 인식). 그 결과 검색결과에
+사이트명이 `GitHub Pages documentation` 으로 노출됐다. 루트(User Page)로 옮겨 해결했다.
 
-| 파일 | 역할 |
-|---|---|
-| `index.html` | 루트 접속 → `/blog-kr/` 로 리다이렉트. `canonical` 로 중복 색인 방지 |
-| `robots.txt` | 크롤러 허용 + 사이트맵 위치 안내 |
-| `sitemap.xml` | 사이트맵 인덱스. 실제 글 목록인 `/blog-kr/sitemap.xml` 을 가리킨다 |
-| `ads.txt` | AdSense 게시자 ID. **승인 후** 주석을 풀어 채운다 |
-| `.nojekyll` | Jekyll 빌드를 끄고 파일을 그대로 서빙 |
+덤으로 `ads.txt` · `robots.txt` · `sitemap.xml` 이 전부 Hugo 가 만드는 루트 파일이 되면서
+따로 관리할 필요가 없어졌다(루트에서만 유효한 파일들이다).
 
-## 사이트맵
+기존 `/blog-kr/...` URL 은 blog-kr 저장소가 새 주소로 리다이렉트한다.
 
-루트 `sitemap.xml` 은 **인덱스**다 — 실제 글 목록인 `/blog-kr/sitemap.xml` 을 가리키기만 한다.
-표준 방식이라 구글이 따라가서 색인하며, 글이 늘어도 이 파일은 고칠 필요가 없다
-(하위 사이트맵을 Hugo 가 자동 갱신하므로).
+## 구조
 
-만약 서치콘솔이 계속 "가져올 수 없음"으로 뜬다면, 인덱스 대신 **blog-kr 사이트맵의 복사본**을
-루트에 싣는 방식으로 바꾼다. blog-kr 사이트맵의 `<loc>` 는 이미 절대 URL 이라 그대로 복사해도
-유효하다. 다만 글이 매 거래일 자동 발행되므로 복사본은 금방 낡는다 → Actions 워크플로로
-매일(일일 발행 직후) 동기화하는 것이 전제다.
+```
+content/posts/    일일보고서·주간레시피(자동 발행) + 투자상식(수기)
+content/          about · contact · privacy
+layouts/          전면 커스텀 (PaperMod 미사용)
+static/           css · js · 브랜드 · ads.txt · 서치콘솔 인증 파일
+hugo.toml         baseURL = https://m-been.github.io/
+```
 
-## 배포
+- 일일·주간 글은 **JSON front matter + 빈 본문**이고 `layouts/single.html` 이 표·섹션을 렌더한다.
+- 투자상식 글은 평범한 YAML front matter + Markdown 본문. `categories: ["투자상식"]` 만 맞추면 된다.
+- 미래 날짜 글은 `buildFuture=false` 라 그날이 되어야 공개된다(예약 발행).
 
-`main` 에 push 하면 GitHub Pages가 그대로 배포한다 (Settings → Pages → Source: `main` / `/`).
-글이 추가돼도 이 저장소를 손댈 일은 없다 — 사이트맵은 위 워크플로가 알아서 갱신한다.
+## 로컬
 
-## AdSense 승인 후 할 일
+```bash
+hugo server -D          # http://localhost:1313
+hugo --gc --minify      # 빌드 검증
+```
 
-1. `ads.txt` 에서 `# google.com, pub-...` 줄의 `#` 제거하고 게시자 ID 입력
-2. blog-kr 의 `hugo.toml` 에서 `adsenseClient = "ca-pub-..."` 채우기 (자동광고 스크립트 활성화)
+## AdSense 승인 후
+
+1. `static/ads.txt` — `# google.com, pub-...` 줄의 `#` 을 제거하고 게시자 ID 입력
+2. `hugo.toml` — `adsenseClient = "ca-pub-..."` (자동광고 스크립트 활성화)
+
+## 발행 파이프라인 (중요)
+
+`report-service` 가 이 저장소를 **발행 전용 conduit** 으로 쓴다. 발행 스크립트가 push 전에
+`git reset --hard origin/main` 을 하므로, **서버 체크아웃에 커밋 안 한 파일을 두면 날아간다.**
+디자인·콘텐츠 수정은 반드시 작업 PC 에서 커밋·push 할 것.

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="home-hero">
+  <h1>{{ if .Data.Singular }}{{ .Title }} {{ .Data.Singular }}{{ else }}{{ .Title }}{{ end }}</h1>
+  {{- with .Description }}<p>{{ . }}</p>{{ end }}
+</section>
+
+{{- $pages := .Pages }}
+{{- if gt (len $pages) 0 }}
+<div class="post-list" style="margin-top:18px">
+  {{- range $pages }}
+  <a class="post-row" href="{{ .RelPermalink }}">
+    <div class="post-row__main">
+      <div class="post-row__meta">
+        {{- with .Params.categories }}<span class="badge badge--cat">{{ index . 0 }}</span>{{ end }}
+        <span>{{ .Date.Format "2006.01.02" }}</span>
+        {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
+      </div>
+      <h3 class="post-row__title">{{ .Title }}</h3>
+      <p class="post-row__excerpt">{{ cond (ne .Params.lede "") .Params.lede .Description | truncate 110 }}</p>
+    </div>
+    {{- if .Params.snapshot }}
+    <div class="post-row__mini">
+      {{- range first 2 .Params.snapshot }}<div class="kv"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>{{ end }}
+    </div>
+    {{- end }}
+  </a>
+  {{- end }}
+</div>
+{{- else }}
+<p style="color:var(--text-muted);padding:30px 0">아직 글이 없습니다.</p>
+{{- end }}
+{{ end }}

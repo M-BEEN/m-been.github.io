@@ -1,0 +1,86 @@
+# 루트 도메인에서 서빙한다(User Page). 서브디렉터리(/blog-kr/)로 두면 구글이 사이트 이름을
+# 지정할 수 없어(사이트명은 도메인 단위로만 인식) 검색결과에 'GitHub Pages documentation'
+# 으로 노출됐다. 그래서 blog-kr repo 에서 이 저장소로 옮겼다.
+baseURL = "https://m-been.github.io/"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
+# 날짜 없는 date 프런트매터를 KST 자정으로 해석 — cron이 08:00 KST(=전날 23:00 UTC)에
+# 돌 때 당일 글이 UTC 기준 미래가 되어 buildFuture=false 로 누락되던 문제 방지.
+timeZone = "Asia/Seoul"
+title = "한국증시 레시피"
+# 커스텀 레이아웃(layouts/) 사용 — PaperMod 미사용(recipe 디자인 포팅)
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = false
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  description = "한국 증시 일일 보고서·주간 분석·투자 상식을 데이터 기반으로 정리합니다. 투자 권유가 아닌 정보 제공입니다."
+  author = "한국증시 레시피"
+  defaultTheme = "auto"
+  ShowToc = true
+  TocOpen = false
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowShareButtons = false
+  hideFooter = false
+  # AdSense 승인 후 'ca-pub-XXXXXXXXXXXXXXXX' 로 채우면 자동광고 스크립트가 활성화됨
+  adsenseClient = ""
+  # 구글 서치콘솔 'HTML 태그' 인증 코드(content 값만). 서치콘솔에서 발급받아 붙여넣으면
+  # <head> 에 google-site-verification 메타태그가 출력된다. 인증 후에도 남겨둘 것.
+  googleSiteVerification = "DUgARfMVJZfQkfIT17I0JUnQv5zYUiwe7VbRH8eZIcQ"
+
+[params.homeInfoParams]
+  Title = "한국증시 레시피 🍳"
+  Content = "매일의 증시 흐름과 종목 신호를 데이터로 정리합니다. **투자 권유가 아닌 정보 제공**이며, 모든 판단과 책임은 투자자 본인에게 있습니다."
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+  ordered = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[menu.main]]
+  identifier = "daily"
+  name = "일일보고서"
+  url = "/categories/일일보고서/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "weekly"
+  name = "주간레시피"
+  url = "/categories/주간레시피/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "notes"
+  name = "투자상식"
+  url = "/categories/투자상식/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "소개"
+  url = "/about/"
+  weight = 80
+
+[[menu.main]]
+  identifier = "contact"
+  name = "연락처"
+  url = "/contact/"
+  weight = 90

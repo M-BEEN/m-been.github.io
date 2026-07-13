@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "ko" }}" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $desc := cond (ne .Description "") .Description .Site.Params.description }}
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ $desc }}">
+{{- with .Site.Params.googleSiteVerification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:image" content="{{ "brand/mark.png" | absURL }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- if .IsHome }}
+{{/* 구글이 검색결과에 표시할 '사이트 이름'. 홈(도메인 루트)의 WebSite 스키마로만 인식하며
+     서브디렉터리에는 지정할 수 없다 — /blog-kr/ 시절 사이트명이 'GitHub Pages documentation'
+     으로 나오던 이유다. 루트로 옮긴 지금은 이 블록이 그 이름을 결정한다. */}}
+{{- $site := dict
+      "@context" "https://schema.org"
+      "@type" "WebSite"
+      "name" .Site.Title
+      "alternateName" "한국증시 레시피"
+      "url" .Site.Home.Permalink
+      "description" .Site.Params.description
+      "inLanguage" "ko-KR"
+      "publisher" (dict "@type" "Organization" "name" .Site.Title "url" .Site.Home.Permalink
+                        "logo" (dict "@type" "ImageObject" "url" ("brand/mark.png" | absURL))) }}
+<script type="application/ld+json">{{ $site | jsonify | safeJS }}</script>
+{{- end }}
+{{- if or .Params.isreport .Params.isweekly }}
+{{- $img := slice ("brand/mark.png" | absURL) }}
+{{- $schema := dict
+      "@context" "https://schema.org"
+      "@type" "NewsArticle"
+      "headline" .Title
+      "description" $desc
+      "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+      "mainEntityOfPage" .Permalink
+      "url" .Permalink
+      "image" $img
+      "author" (dict "@type" "Organization" "name" .Site.Params.author "url" .Site.Home.Permalink)
+      "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" ("brand/mark.png" | absURL))) }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- end }}
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
+{{- end }}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="{{ "css/recipe.css" | relURL }}">
+{{- with .Site.Params.adsenseClient }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end }}
+<script>(function(){try{var t=localStorage.getItem('krsr-theme');if(t!=='light'&&t!=='dark'){t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">
+      <img class="brand__mark" src="{{ "brand/mark.png" | relURL }}" alt="한국증시 레시피" width="26" height="26">
+      <span>{{ .Site.Title }}</span>
+      <span class="brand__sub">Daily Brief</span>
+    </a>
+    <nav class="nav">
+      {{- range .Site.Menus.main }}
+      {{/* 메뉴 .URL 은 이미 baseURL 서브경로(/blog-kr)를 포함 → relURL 을 또 붙이면
+           /blog-kr/blog-kr/... 로 이중이 된다. .URL 을 그대로 쓴다(서버/프로덕션 동일). */}}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{- end }}
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn nav-toggle" data-nav-toggle aria-label="메뉴 열기" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <button class="icon-btn theme-toggle" data-theme-toggle aria-label="라이트/다크 전환">
+        <svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8"/></svg>
+        <svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4 7 7 0 1 0 20 14.5z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="shell">
+{{- block "main" . }}{{ end }}
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <a class="brand" href="{{ site.Home.RelPermalink }}"><img class="brand__mark" src="{{ "brand/mark.png" | relURL }}" alt="한국증시 레시피" width="26" height="26"><span>{{ .Site.Title }}</span></a>
+      <div style="margin-top:8px">매일 아침, 그날의 증시를 한 그릇에.</div>
+      <div class="footer-links">
+        <a href="{{ "about/" | relURL }}">소개</a>
+        <a href="{{ "privacy/" | relURL }}">개인정보처리방침</a>
+        <a href="{{ "contact/" | relURL }}">연락처</a>
+      </div>
+    </div>
+    <div>© {{ now.Year }} {{ .Site.Title }} · 데이터는 정보 제공용이며 투자 권유가 아닙니다.</div>
+  </div>
+</footer>
+
+<script src="{{ "js/recipe.js" | relURL }}"></script>
+</body>
+</html>

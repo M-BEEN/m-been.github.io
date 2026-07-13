@@ -1,0 +1,276 @@
+{{ define "main" }}
+{{- if .Params.isreport }}
+{{/* ===================== 일일 리포트 ===================== */}}
+
+<div class="art-head">
+  <div class="art-meta">
+    <span class="badge badge--cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+    <span>{{ .Date.Format "2006년 1월 2일" }}</span>
+    <span class="sep"></span>
+    <span>읽기 {{ .Params.reading }}분</span>
+    <span class="sep"></span>
+    <span>장 마감 종합</span>
+  </div>
+  <h1 class="art-title">{{ .Title }}</h1>
+  {{- with .Params.lede }}<p class="art-lede">{{ . }}</p>{{ end }}
+  <div class="art-updated"><span class="dot" style="background:var(--text-muted)"></span> 기준일 {{ .Params.asof }} · 종가 기준</div>
+</div>
+
+{{- with .Params.snapshot }}
+<section style="padding:24px 0 6px">
+  <div class="snap-grid">
+    {{- range . }}
+    <div class="snap">
+      <div class="snap__name">{{ .name }} <span class="tk">{{ .ticker }}</span></div>
+      <div class="snap__val num">{{ .value }}</div>
+      <div class="snap__chg {{ .dir }}"><span class="num">{{ .abs }}</span><span class="pct num">{{ .pct }}</span></div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{/* 존재하는 섹션만 목차/번호 구성 */}}
+{{- $labels := dict "overview" "총평" "macro" "지수·매크로 심층" "leaders" "주도주 · 신호주" "watchlist" "관심 종목" "insights" "매매 인사이트" "issues" "경제 이슈" "schedule" "향후 일정 · 부동산 · 관전 포인트" "disclaimer" "면책 고지" }}
+{{- $secs := slice }}
+{{- if .Params.overview }}{{ $secs = $secs | append "overview" }}{{ end }}
+{{- if or .Params.macro_insight .Params.indices_kr }}{{ $secs = $secs | append "macro" }}{{ end }}
+{{- if or .Params.signals_leaders .Params.signals_emerging }}{{ $secs = $secs | append "leaders" }}{{ end }}
+{{- if .Params.watchlist }}{{ $secs = $secs | append "watchlist" }}{{ end }}
+{{- if .Params.insights }}{{ $secs = $secs | append "insights" }}{{ end }}
+{{- if .Params.issues }}{{ $secs = $secs | append "issues" }}{{ end }}
+{{- if or .Params.schedule .Params.realestate .Params.outlook }}{{ $secs = $secs | append "schedule" }}{{ end }}
+{{- $secs = $secs | append "disclaimer" }}
+{{- $num := dict }}
+{{- range $i, $id := $secs }}{{ $num = merge $num (dict $id (printf "%02d" (add $i 1))) }}{{ end }}
+
+<div class="art-layout">
+  <aside class="secnav" data-secnav>
+    <div class="secnav__title">목차</div>
+    <ul class="secnav__list">
+      {{- range $i, $id := $secs }}
+      <li><a href="#{{ $id }}"><span>{{ index $labels $id }}</span><span class="n">{{ printf "%02d" (add $i 1) }}</span></a></li>
+      {{- end }}
+    </ul>
+    <div class="secnav__progress"><i data-progress></i></div>
+  </aside>
+
+  <div class="art-content">
+
+    {{- if .Params.overview }}
+    <section class="sec" id="overview">
+      <div class="sec__head"><span class="sec__num">{{ index $num "overview" }}</span><h2 class="sec__title">총평</h2></div>
+      <div class="prose">{{ range split .Params.overview "\n\n" }}{{ $p := strings.TrimSpace . }}{{ with $p }}<p>{{ . }}</p>{{ end }}{{ end }}</div>
+    </section>
+    {{- end }}
+
+    {{- if in $secs "macro" }}
+    <section class="sec" id="macro">
+      <div class="sec__head"><span class="sec__num">{{ index $num "macro" }}</span><h2 class="sec__title">지수·매크로 심층</h2></div>
+      {{- with .Params.macro_insight }}<div class="prose">{{ range split . "\n\n" }}{{ $p := strings.TrimSpace . }}{{ with $p }}<p>{{ . }}</p>{{ end }}{{ end }}</div>{{ end }}
+      {{- with .Params.macro_strip }}
+      <div class="macro-strip">
+        {{- range . }}<div class="macro-cell"><div class="k">{{ .k }}</div><div class="v num">{{ .v }}</div><div class="d {{ .dir }} num">{{ .d }}</div></div>{{ end }}
+      </div>
+      {{- end }}
+      {{- with .Params.indices_kr }}
+      <div class="subhead">국내 지수</div>
+      <div class="tbl-wrap"><table class="dt">
+        <thead><tr><th>지수</th><th class="r">종가</th><th class="r">등락</th><th class="r">등락률</th><th class="r">거래대금</th></tr></thead>
+        <tbody>{{ range . }}<tr><td class="name">{{ .name }}</td><td class="r num" data-label="종가">{{ .close }}</td><td class="r num {{ .dir }}" data-label="등락">{{ .abs }}</td><td class="r num {{ .dir }}" data-label="등락률">{{ .pct }}</td><td class="r num" data-label="거래대금">{{ .amount }}</td></tr>{{ end }}</tbody>
+      </table></div>
+      {{- end }}
+      {{- with .Params.indices_global }}
+      <div class="subhead">해외 지수</div>
+      <div class="tbl-wrap"><table class="dt">
+        <thead><tr><th>지수</th><th class="r">종가</th><th class="r">등락률</th></tr></thead>
+        <tbody>{{ range . }}<tr><td class="name">{{ .name }}</td><td class="r num" data-label="종가">{{ .close }}</td><td class="r num {{ .dir }}" data-label="등락률">{{ .pct }}</td></tr>{{ end }}</tbody>
+      </table></div>
+      {{- end }}
+      {{- if or .Params.fxc .Params.crypto }}
+      <div class="grid-2" style="margin-top:18px">
+        {{- with .Params.fxc }}
+        <div><div class="subhead">환율 · 원자재</div><div class="tbl-wrap"><table class="dt" style="min-width:0">
+          <thead><tr><th>항목</th><th class="r">시세</th><th class="r">등락률</th></tr></thead>
+          <tbody>{{ range . }}<tr><td class="name">{{ .name }}</td><td class="r num" data-label="시세">{{ .value }}</td><td class="r num {{ .dir }}" data-label="등락률">{{ .pct }}</td></tr>{{ end }}</tbody>
+        </table></div></div>
+        {{- end }}
+        {{- with .Params.crypto }}
+        <div><div class="subhead">암호화폐</div><div class="tbl-wrap"><table class="dt" style="min-width:0">
+          <thead><tr><th>코인</th><th class="r">시세(USD)</th><th class="r">등락률</th></tr></thead>
+          <tbody>{{ range . }}<tr><td class="name">{{ .name }}</td><td class="r num" data-label="시세">{{ .value }}</td><td class="r num {{ .dir }}" data-label="등락률">{{ .pct }}</td></tr>{{ end }}</tbody>
+        </table></div></div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </section>
+    {{- end }}
+
+    {{- if in $secs "leaders" }}
+    <section class="sec" id="leaders">
+      <div class="sec__head"><span class="sec__num">{{ index $num "leaders" }}</span><h2 class="sec__title">주도주 · 신호주</h2></div>
+      {{- range .Params.signals_leaders }}
+      <div class="subhead">{{ .market }} 주도주</div>
+      <div class="tbl-wrap"><table class="dt">
+        <thead><tr><th>종목</th><th>코드</th><th>코멘트</th><th>출처</th></tr></thead>
+        <tbody>{{ range .rows }}<tr><td class="name">{{ .name }}</td><td class="code num" data-label="코드">{{ .code }}</td><td class="cmt" data-label="코멘트">{{ .comment }}</td><td class="src" data-label="출처">{{ with .source }}<a href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</td></tr>{{ end }}</tbody>
+      </table></div>
+      {{- end }}
+      {{- range .Params.signals_emerging }}
+      <div class="subhead">{{ .market }} 신호주</div>
+      <div class="tbl-wrap"><table class="dt">
+        <thead><tr><th>종목</th><th>코드</th><th>코멘트</th><th>출처</th></tr></thead>
+        <tbody>{{ range .rows }}<tr><td class="name">{{ .name }}</td><td class="code num" data-label="코드">{{ .code }}</td><td class="cmt" data-label="코멘트">{{ .comment }}</td><td class="src" data-label="출처">{{ with .source }}<a href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</td></tr>{{ end }}</tbody>
+      </table></div>
+      {{- end }}
+    </section>
+    {{- end }}
+
+    {{- with .Params.watchlist }}
+    <section class="sec" id="watchlist">
+      <div class="sec__head"><span class="sec__num">{{ index $num "watchlist" }}</span><h2 class="sec__title">관심 종목</h2></div>
+      <div class="tbl-wrap"><table class="dt">
+        <thead><tr><th>종목</th><th>코드</th><th class="r">종가</th><th class="r">등락률</th><th>추세</th></tr></thead>
+        <tbody>{{ range . }}<tr><td class="name">{{ .name }}</td><td class="code num" data-label="코드">{{ .code }}</td><td class="r num" data-label="종가">{{ .close }}</td><td class="r num {{ .dir }}" data-label="등락률">{{ .pct }}</td><td data-label="추세">{{ .trend }}</td></tr>{{ end }}</tbody>
+      </table></div>
+    </section>
+    {{- end }}
+
+    {{- with .Params.insights }}
+    <section class="sec" id="insights">
+      <div class="sec__head"><span class="sec__num">{{ index $num "insights" }}</span><h2 class="sec__title">매매 인사이트</h2></div>
+      <div class="insight-grid">
+        {{- range . }}
+        <div class="insight">
+          <div class="insight__top">
+            <div class="insight__name">{{ .name }} <span class="code num">{{ .code }}</span></div>
+            <span class="badge badge--{{ .badge }}">{{ .verdict }}</span>
+          </div>
+          <div class="insight__rows">
+            {{- with .metrics }}<div class="irow"><span class="lab">지표</span><span class="val num">{{ . }}</span></div>{{ end }}
+            {{- with .catalyst }}<div class="irow"><span class="lab">촉발요인</span><span class="val">{{ . }}</span></div>{{ end }}
+            {{- with .trend_view }}<div class="irow"><span class="lab">추세</span><span class="val">{{ . }}</span></div>{{ end }}
+            {{- with .risk }}<div class="irow"><span class="lab">리스크</span><span class="val">{{ . }}</span></div>{{ end }}
+          </div>
+          <div class="insight__concl"><span class="lab">결론</span><span>{{ .conclusion }}{{ with .source }} · <a class="src" href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</span></div>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{- with .Params.issues }}
+    <section class="sec" id="issues">
+      <div class="sec__head"><span class="sec__num">{{ index $num "issues" }}</span><h2 class="sec__title">경제 이슈</h2></div>
+      <ul class="timeline">
+        {{- range . }}
+        <li>
+          <div class="t-title">{{ with .when }}<span class="t-when">{{ . }}</span>{{ end }}{{ .title }}</div>
+          <div class="t-body">{{ .body }}{{ with .impact }}<span class="t-impact">국내 영향: {{ . }}</span>{{ end }}{{ with .source }}<a class="t-src" href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</div>
+        </li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+
+    {{- if in $secs "schedule" }}
+    <section class="sec" id="schedule">
+      <div class="sec__head"><span class="sec__num">{{ index $num "schedule" }}</span><h2 class="sec__title">향후 일정 · 부동산 · 관전 포인트</h2></div>
+      <div class="cols-3">
+        {{- with .Params.schedule }}
+        <div class="mini-card"><h4><span class="dot" style="background:var(--accent)"></span> 향후 일정</h4>
+          <ul class="mini-list">{{ range . }}<li><span>{{ .event }}</span>{{ with .when }}<span class="when">{{ . }}</span>{{ end }}</li>{{ end }}</ul>
+        </div>
+        {{- end }}
+        {{- with .Params.realestate }}
+        <div class="mini-card"><h4><span class="dot" style="background:var(--up)"></span> 부동산 (수도권)</h4>
+          <ul class="mini-list">{{ range .items }}<li><span>{{ .title }}</span></li>{{ end }}</ul>
+        </div>
+        {{- end }}
+        {{- with .Params.outlook }}
+        <div class="mini-card"><h4><span class="dot" style="background:var(--down)"></span> 관전 포인트</h4>
+          <div style="font-size:13px;color:var(--text-2);line-height:1.62">{{ . }}</div>
+        </div>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    <section class="sec" id="disclaimer">
+      <div class="sec__head"><span class="sec__num">{{ index $num "disclaimer" }}</span><h2 class="sec__title">면책 고지</h2></div>
+      <div class="disclaimer"><strong>투자 유의 안내.</strong> 본 자료는 정보 제공을 목적으로 작성된 것으로, 특정 종목의 매수·매도를 권유하지 않습니다. 수치와 코멘트는 작성 시점 기준이며 실제와 다를 수 있습니다. 모든 투자의 최종 판단과 책임은 투자자 본인에게 있으며, 과거의 수익률이 미래의 수익을 보장하지 않습니다.</div>
+    </section>
+
+  </div>
+</div>
+
+{{- else if .Params.isweekly }}
+{{/* ===================== 주간레시피 (심층 에세이) ===================== */}}
+
+<div class="art-head">
+  <div class="art-meta">
+    <span class="badge badge--cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+    <span>{{ .Date.Format "2006년 1월 2일" }}</span>
+    <span class="sep"></span>
+    <span>읽기 {{ .Params.reading }}분</span>
+    <span class="sep"></span>
+    <span>주간 종합</span>
+  </div>
+  <h1 class="art-title">{{ .Title }}</h1>
+  {{- with .Params.lede }}<p class="art-lede">{{ . }}</p>{{ end }}
+  {{- with .Params.week_range }}<div class="art-updated"><span class="dot" style="background:var(--text-muted)"></span> 대상 기간 {{ . }} · 종가 기준</div>{{ end }}
+</div>
+
+{{- with .Params.snapshot }}
+<section style="padding:24px 0 6px">
+  <div class="snap-grid">
+    {{- range . }}
+    <div class="snap">
+      <div class="snap__name">{{ .name }} <span class="tk">{{ .ticker }}</span></div>
+      <div class="snap__val num">{{ .value }}</div>
+      <div class="snap__chg {{ .dir }}"><span class="num">{{ .abs }}</span><span class="pct num">{{ .pct }}</span></div>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{/* startLevel=2 면 .Fragments.Headings 최상위가 빈 루트(h1 자리)라 h2 가 그 자식으로
+     들어온다. 제목 있는 최상위는 그대로, 빈 루트는 자식(h2)을 펼쳐 목차 = ## 섹션만. */}}
+{{- $toc := slice }}
+{{- range .Fragments.Headings }}{{ if .Title }}{{ $toc = $toc | append . }}{{ else }}{{ range .Headings }}{{ $toc = $toc | append . }}{{ end }}{{ end }}{{ end }}
+<div class="art-layout">
+  <aside class="secnav" data-secnav>
+    <div class="secnav__title">목차</div>
+    <ul class="secnav__list">
+      {{- range $i, $h := $toc }}
+      <li><a href="#{{ $h.ID }}"><span>{{ $h.Title }}</span><span class="n">{{ printf "%02d" (add $i 1) }}</span></a></li>
+      {{- end }}
+      <li><a href="#disclaimer"><span>면책 고지</span><span class="n">{{ printf "%02d" (add (len $toc) 1) }}</span></a></li>
+    </ul>
+    <div class="secnav__progress"><i data-progress></i></div>
+  </aside>
+
+  <div class="art-content">
+    <div class="prose page-prose weekly-prose">{{ .Content }}</div>
+    <section class="sec" id="disclaimer" style="border-top:1px solid var(--border);margin-top:30px;padding-top:26px">
+      <div class="sec__head"><span class="sec__num">{{ printf "%02d" (add (len $toc) 1) }}</span><h2 class="sec__title">면책 고지</h2></div>
+      <div class="disclaimer"><strong>투자 유의 안내.</strong> 본 자료는 정보 제공을 목적으로 작성된 것으로, 특정 종목의 매수·매도를 권유하지 않습니다. 수치와 코멘트는 작성 시점 기준이며 실제와 다를 수 있습니다. 모든 투자의 최종 판단과 책임은 투자자 본인에게 있으며, 과거의 수익률이 미래의 수익을 보장하지 않습니다.</div>
+    </section>
+  </div>
+</div>
+
+{{- else }}
+{{/* ===================== 일반 글(소개/정책/연락처 등) ===================== */}}
+<article class="art-head" style="border-bottom:0;padding-bottom:6px">
+  {{- if eq .Section "posts" }}
+  <div class="art-meta">
+    {{- with .Params.categories }}<span class="badge badge--cat">{{ index . 0 }}</span>{{ end }}
+    <span>{{ .Date.Format "2006년 1월 2일" }}</span>
+  </div>
+  {{- end }}
+  <h1 class="art-title">{{ .Title }}</h1>
+</article>
+<div class="prose page-prose" style="padding:14px 0 60px;max-width:760px">{{ .Content }}</div>
+{{- end }}
+{{ end }}

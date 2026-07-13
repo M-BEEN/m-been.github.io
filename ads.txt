@@ -1,7 +1,0 @@
-# Google AdSense 승인 후, 아래 줄의 맨 앞 '#'(주석)을 제거하고
-# pub-XXXXXXXXXXXXXXXX 를 본인 게시자 ID로 교체하세요. (가운데 ID만 본인 것, 나머지는 고정)
-#
-# ads.txt 는 루트 도메인에서만 유효합니다 — https://m-been.github.io/ads.txt
-# blog-kr 하위(/blog-kr/ads.txt)에 두면 크롤러가 읽지 않습니다.
-#
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
