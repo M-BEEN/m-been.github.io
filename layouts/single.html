@@ -16,6 +16,13 @@
   <div class="art-updated"><span class="dot" style="background:var(--text-muted)"></span> 기준일 {{ .Params.asof }} · 종가 기준</div>
 </div>
 
+{{/* 히어로 이미지 — 첫 화면에 뜨므로 eager 로드(LCP). hero_image 없으면 통째로 생략된다. */}}
+{{- with .Params.hero_image }}
+<figure class="report-visual report-visual--hero">
+  <img src="{{ . }}" alt="{{ $.Params.hero_alt | default $.Title }}" loading="eager" decoding="async">
+</figure>
+{{- end }}
+
 {{- with .Params.snapshot }}
 <section style="padding:24px 0 6px">
   <div class="snap-grid">
@@ -69,6 +76,12 @@
     <section class="sec" id="macro">
       <div class="sec__head"><span class="sec__num">{{ index $num "macro" }}</span><h2 class="sec__title">지수·매크로 심층</h2></div>
       {{- with .Params.macro_insight }}<div class="prose">{{ range split . "\n\n" }}{{ $p := strings.TrimSpace . }}{{ with $p }}<p>{{ . }}</p>{{ end }}{{ end }}</div>{{ end }}
+      {{/* 매크로 이미지 — 스크롤해야 보이므로 lazy. macro_image 없으면 생략. */}}
+      {{- with .Params.macro_image }}
+      <figure class="report-visual">
+        <img src="{{ . }}" alt="{{ $.Params.macro_alt | default "시장 핵심 구도를 표현한 일러스트레이션" }}" loading="lazy" decoding="async">
+      </figure>
+      {{- end }}
       {{- with .Params.macro_strip }}
       <div class="macro-strip">
         {{- range . }}<div class="macro-cell"><div class="k">{{ .k }}</div><div class="v num">{{ .v }}</div><div class="d {{ .dir }} num">{{ .d }}</div></div>{{ end }}

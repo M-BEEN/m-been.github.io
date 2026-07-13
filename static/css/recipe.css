@@ -202,6 +202,18 @@ table.dt .src { color: var(--accent); font-size: 11.5px; font-weight: 600; white
 .art-lede { font-size: 16.5px; line-height: 1.6; color: var(--text-2); margin: 0; max-width: 62ch; }
 .art-updated { margin-top: 14px; font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 7px; }
 
+/* 보고서 본문 이미지(히어로·매크로). aspect-ratio 로 로드 전에도 자리를 잡아 레이아웃 이동(CLS)을 막는다. */
+.report-visual {
+  margin: 24px 0 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--bg-subtle);
+  box-shadow: 0 14px 38px rgba(14, 27, 42, .08);
+}
+.report-visual--hero { margin: 26px 0 0; }
+.report-visual img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
 /* two-column: sticky nav rail + content */
 .art-layout { display: grid; grid-template-columns: 212px minmax(0, 1fr); gap: 40px; align-items: start; padding-top: 26px; }
 
