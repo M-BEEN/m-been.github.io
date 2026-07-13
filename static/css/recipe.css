@@ -400,6 +400,12 @@ table.dt .src { color: var(--accent); font-size: 11.5px; font-weight: 600; white
 .weekly-prose table th, .weekly-prose table td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; }
 .weekly-prose table th { font-weight: 700; color: var(--text-2); background: var(--bg-subtle); }
 .weekly-prose table td.num, .weekly-prose table td:not(:first-child) { font-variant-numeric: tabular-nums; }
+/* 주간 에세이 본문 이미지 — 마크다운 ![]() 는 <p><img></p> 로 렌더된다 */
+.weekly-prose > p:has(> img:only-child) { margin: 22px 0 28px; }
+.weekly-prose > p > img:only-child {
+  display: block; width: 100%; border: 1px solid var(--border); border-radius: 14px;
+  box-shadow: 0 16px 38px rgba(12, 24, 45, .12);
+}
 
 /* ---------- 브랜드 마크 = 이미지 아이콘 ---------- */
 img.brand__mark { width: 26px; height: 26px; flex: none; display: block; background: transparent; border-radius: 6px; object-fit: cover; padding: 0; }
