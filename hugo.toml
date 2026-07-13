@@ -2,7 +2,7 @@
 # 지정할 수 없어(사이트명은 도메인 단위로만 인식) 검색결과에 'GitHub Pages documentation'
 # 으로 노출됐다. 그래서 blog-kr repo 에서 이 저장소로 옮겼다.
 baseURL = "https://m-been.github.io/"
-languageCode = "ko-kr"
+locale = "ko-kr"
 defaultContentLanguage = "ko"
 # 날짜 없는 date 프런트매터를 KST 자정으로 해석 — cron이 08:00 KST(=전날 23:00 UTC)에
 # 돌 때 당일 글이 UTC 기준 미래가 되어 buildFuture=false 로 누락되던 문제 방지.
