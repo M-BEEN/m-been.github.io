@@ -1,7 +1,8 @@
 User-agent: *
 Allow: /
 
-# 루트 사이트맵은 인덱스이고, 실제 글 목록은 /blog-kr/sitemap.xml 에 있다.
-# 크롤러가 인덱스를 따라가지 못하는 경우까지 대비해 하위 사이트맵도 직접 명시한다.
+# 루트 sitemap.xml 은 blog-kr 사이트맵의 복사본이라 전체 URL 을 그대로 담는다
+# (.github/workflows/sync-sitemap.yml 이 매일 동기화).
+# 아래 blog-kr 원본은 동기화가 밀렸을 때를 대비한 안전망 — 같은 URL 이므로 중복 색인되지 않는다.
 Sitemap: https://m-been.github.io/sitemap.xml
 Sitemap: https://m-been.github.io/blog-kr/sitemap.xml

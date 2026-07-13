@@ -15,14 +15,25 @@ Project Page(blog-kr) 만으로는 루트를 점유할 수 없어 별도의 User
 |---|---|
 | `index.html` | 루트 접속 → `/blog-kr/` 로 리다이렉트. `canonical` 로 중복 색인 방지 |
 | `robots.txt` | 크롤러 허용 + 사이트맵 위치 안내 |
-| `sitemap.xml` | 사이트맵 인덱스. 실제 글 목록인 `/blog-kr/sitemap.xml` 을 가리킨다 |
+| `sitemap.xml` | blog-kr 사이트맵의 **복사본**(전체 URL 수록). 매일 자동 동기화 |
 | `ads.txt` | AdSense 게시자 ID. **승인 후** 주석을 풀어 채운다 |
 | `.nojekyll` | Jekyll 빌드를 끄고 파일을 그대로 서빙 |
+
+## 사이트맵 동기화
+
+루트 `sitemap.xml` 은 인덱스(가리키기만 하는 방식)가 아니라 **blog-kr 사이트맵의 실복사본**이다.
+blog-kr 사이트맵의 `<loc>` 는 이미 절대 URL 이라 그대로 복사해도 유효하고, 이렇게 두면
+루트 사이트맵 하나만 봐도 전체 URL 이 보인다.
+
+글이 매 거래일 자동 발행되므로 복사본은 금방 낡는다 → `.github/workflows/sync-sitemap.yml`
+이 매일 08:40 KST(일일 발행 직후)에 blog-kr 사이트맵을 가져와 동기화한다.
+`workflow_dispatch` 로 수동 실행도 된다. 받아온 파일이 사이트맵이 아니거나 URL 이 5개 미만이면
+기존 파일을 유지하고 실패시킨다(빌드 중 빈 응답으로 덮어쓰는 사고 방지).
 
 ## 배포
 
 `main` 에 push 하면 GitHub Pages가 그대로 배포한다 (Settings → Pages → Source: `main` / `/`).
-글이 추가돼도 이 저장소는 건드릴 필요가 없다 — 하위 사이트맵이 자동으로 갱신된다.
+글이 추가돼도 이 저장소를 손댈 일은 없다 — 사이트맵은 위 워크플로가 알아서 갱신한다.
 
 ## AdSense 승인 후 할 일
 
