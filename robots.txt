@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# 루트 사이트맵은 인덱스이고, 실제 글 목록은 /blog-kr/sitemap.xml 에 있다.
+# 크롤러가 인덱스를 따라가지 못하는 경우까지 대비해 하위 사이트맵도 직접 명시한다.
 Sitemap: https://m-been.github.io/sitemap.xml
+Sitemap: https://m-been.github.io/blog-kr/sitemap.xml
