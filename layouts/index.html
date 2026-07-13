@@ -32,6 +32,29 @@
 </section>
 {{- end }}
 
+{{/* ── 섹터 전광판 요약 — 최신 보고서에서 오른 업종·내린 업종 양극단만 ──── */}}
+{{- with $latest }}
+{{- $sectors := .Params.sectors }}
+{{- if $sectors }}
+{{/* front matter 의 sectors 는 거래대금 순이다. 여기선 등락률로 다시 정렬해
+     '가장 오른 3개 / 가장 내린 3개'만 보여준다 — 메인에선 그게 궁금한 정보다.
+     전체 전광판은 보고서 안에 있다. */}}
+{{- $bypct := sort $sectors "pct_num" "desc" }}
+<div class="section-label">
+  <h2>섹터 전광판</h2>
+  <a class="more" href="{{ .RelPermalink }}#sectors">전체 보기 →</a>
+</div>
+<div class="heat-strip">
+  {{- range first 3 $bypct }}
+  <div class="heat heat--{{ .heat }}"><span class="heat__name">{{ .name }}</span><span class="heat__pct num">{{ .pct }}</span></div>
+  {{- end }}
+  {{- range last 3 $bypct }}
+  <div class="heat heat--{{ .heat }}"><span class="heat__name">{{ .name }}</span><span class="heat__pct num">{{ .pct }}</span></div>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
 {{/* ── 일일보고서 ─────────────────────────────────────── */}}
 {{- if gt (len $topDaily) 0 }}
 {{- $head := index $topDaily 0 }}

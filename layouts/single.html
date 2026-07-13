@@ -31,10 +31,11 @@
 {{- end }}
 
 {{/* 존재하는 섹션만 목차/번호 구성 */}}
-{{- $labels := dict "overview" "총평" "macro" "지수·매크로 심층" "leaders" "주도주 · 신호주" "watchlist" "관심 종목" "insights" "매매 인사이트" "issues" "경제 이슈" "schedule" "향후 일정 · 부동산 · 관전 포인트" "disclaimer" "면책 고지" }}
+{{- $labels := dict "overview" "총평" "macro" "지수·매크로 심층" "sectors" "섹터 전광판" "leaders" "주도주 · 신호주" "watchlist" "관심 종목" "insights" "매매 인사이트" "issues" "경제 이슈" "schedule" "향후 일정 · 부동산 · 관전 포인트" "disclaimer" "면책 고지" }}
 {{- $secs := slice }}
 {{- if .Params.overview }}{{ $secs = $secs | append "overview" }}{{ end }}
 {{- if or .Params.macro_insight .Params.indices_kr }}{{ $secs = $secs | append "macro" }}{{ end }}
+{{- if .Params.sectors }}{{ $secs = $secs | append "sectors" }}{{ end }}
 {{- if or .Params.signals_leaders .Params.signals_emerging }}{{ $secs = $secs | append "leaders" }}{{ end }}
 {{- if .Params.watchlist }}{{ $secs = $secs | append "watchlist" }}{{ end }}
 {{- if .Params.insights }}{{ $secs = $secs | append "insights" }}{{ end }}
@@ -103,6 +104,25 @@
         {{- end }}
       </div>
       {{- end }}
+    </section>
+    {{- end }}
+
+    {{- if in $secs "sectors" }}
+    {{/* 섹터 전광판 — 타일 크기는 균일하게 두고, 정렬(거래대금 순)로 자금 쏠림을,
+         색(heat 7단계)으로 등락을 나타낸다. 트리맵(면적=시총)은 모바일에서 하위 타일이
+         4px 로 뭉개져 안 쓴다. 색만으로 값을 전달하지 않도록 등락률 숫자를 항상 병기. */}}
+    <section class="sec" id="sectors">
+      <div class="sec__head"><span class="sec__num">{{ index $num "sectors" }}</span><h2 class="sec__title">섹터 전광판</h2></div>
+      <p class="sec__hint">거래대금이 많은 업종부터. 색이 짙을수록 등락 폭이 크다.</p>
+      <div class="heat-grid">
+        {{- range .Params.sectors }}
+        <div class="heat heat--{{ .heat }}">
+          <div class="heat__name">{{ .name }}<span class="heat__mkt">{{ .market }}</span></div>
+          <div class="heat__pct num">{{ .pct }}</div>
+          {{- with .amount }}<div class="heat__amt num">{{ . }}</div>{{ end }}
+        </div>
+        {{- end }}
+      </div>
     </section>
     {{- end }}
 

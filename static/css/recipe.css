@@ -443,3 +443,63 @@ img, svg, video { max-width: 100%; height: auto; }
   /* 섹션 점프 시 상단 헤더+칩바에 안 가리도록 여유 */
   .sec { scroll-margin-top: calc(var(--header-h) + 58px); }
 }
+
+/* ---------- 섹터 전광판 (heat board) ----------
+   타일 크기는 균일. 정렬(거래대금 순)이 '자금이 어디로 갔나'를, 색이 등락을 나타낸다.
+   트리맵(면적=시총)은 모바일에서 하위 타일이 뭉개져 쓰지 않는다.
+   색만으로 값을 전달하지 않는다 — 타일에 등락률 숫자를 항상 병기(색맹 대비). */
+:root {
+  --heat-up3:   #b02a1f;  --heat-up3-fg:   #fff;
+  --heat-up2:   #d9534f;  --heat-up2-fg:   #fff;
+  --heat-up1:   #f8c9c4;  --heat-up1-fg:   #5d1a13;
+  --heat-flat:  #e9ecef;  --heat-flat-fg:  #454b53;
+  --heat-down1: #c3d9f5;  --heat-down1-fg: #12365f;
+  --heat-down2: #3d7fd0;  --heat-down2-fg: #fff;
+  --heat-down3: #1a4b96;  --heat-down3-fg: #fff;
+}
+html[data-theme='dark'] {
+  --heat-up3:   #8f2b22;  --heat-up3-fg:   #ffe9e6;
+  --heat-up2:   #a8463f;  --heat-up2-fg:   #ffe9e6;
+  --heat-up1:   #5c332f;  --heat-up1-fg:   #ffd8d3;
+  --heat-flat:  #2a2f38;  --heat-flat-fg:  #aeb6c0;
+  --heat-down1: #2b3d5c;  --heat-down1-fg: #cfe0f7;
+  --heat-down2: #2a5fa8;  --heat-down2-fg: #e6f0fd;
+  --heat-down3: #1d4585;  --heat-down3-fg: #e6f0fd;
+}
+
+.heat-grid {
+  display: grid;
+  /* auto-fill + minmax: 데스크톱 4~5열 → 태블릿 3열 → 모바일 2열로 자동 접힘(미디어쿼리 불필요) */
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+.heat {
+  border-radius: var(--radius-sm);
+  padding: 12px 13px 11px;
+  background: var(--heat-flat);
+  color: var(--heat-flat-fg);
+  min-width: 0;
+}
+.heat--up3   { background: var(--heat-up3);   color: var(--heat-up3-fg); }
+.heat--up2   { background: var(--heat-up2);   color: var(--heat-up2-fg); }
+.heat--up1   { background: var(--heat-up1);   color: var(--heat-up1-fg); }
+.heat--flat  { background: var(--heat-flat);  color: var(--heat-flat-fg); }
+.heat--down1 { background: var(--heat-down1); color: var(--heat-down1-fg); }
+.heat--down2 { background: var(--heat-down2); color: var(--heat-down2-fg); }
+.heat--down3 { background: var(--heat-down3); color: var(--heat-down3-fg); }
+
+.heat__name {
+  font-size: 12.5px; font-weight: 700; line-height: 1.3;
+  display: flex; align-items: baseline; gap: 5px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.heat__mkt { font-size: 10px; font-weight: 600; opacity: .62; flex: none; }
+.heat__pct { font-size: 19px; font-weight: 800; letter-spacing: -.02em; margin-top: 5px; line-height: 1.1; }
+.heat__amt { font-size: 11px; font-weight: 600; opacity: .72; margin-top: 2px; }
+
+/* 메인 페이지 요약 스트립 — 상승/하락 상위 몇 개만 한 줄로 */
+.heat-strip { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+.heat-strip .heat { padding: 8px 11px; border-radius: 999px; display: flex; align-items: baseline; gap: 8px; }
+.heat-strip .heat__name { font-size: 12px; }
+.heat-strip .heat__pct { font-size: 13px; margin-top: 0; }
