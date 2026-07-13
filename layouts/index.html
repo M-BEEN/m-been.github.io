@@ -1,7 +1,17 @@
 {{ define "main" }}
-{{- $posts := where .Site.RegularPages "Section" "posts" }}
-{{- $reports := where $posts "Params.isreport" true }}
-{{- $latest := "" }}{{ if gt (len $reports) 0 }}{{ $latest = index $reports 0 }}{{ end }}
+{{- $posts    := where .Site.RegularPages "Section" "posts" }}
+{{- $dailies  := where $posts "Params.isreport" true }}
+{{- $weeklies := where $posts "Params.isweekly" true }}
+
+{{/* 메인에 크게 거는 글. '지난 글'에서 이만큼을 빼야 중복이 안 생긴다.
+     예전엔 상단은 isreport 에서 뽑고 아카이브는 전체에서 after 1 로 잘라내서,
+     같은 날짜에 투자상식 글이 있으면 최신 일일보고서가 아래에 또 나왔다. */}}
+{{- $topDaily  := first 3 $dailies }}
+{{- $topWeekly := first 2 $weeklies }}
+{{- $featured  := union $topDaily $topWeekly }}
+{{- $archive   := complement $featured $posts }}
+
+{{- $latest := "" }}{{ if gt (len $dailies) 0 }}{{ $latest = index $dailies 0 }}{{ end }}
 
 <section class="home-hero">
   <h1>오늘의 증시, 한 그릇에 담았습니다</h1>
@@ -20,28 +30,41 @@
     {{- end }}
   </div>
 </section>
+{{- end }}
 
-<div class="section-label"><h2>오늘의 리포트</h2><a class="more" href="{{ "posts/" | relURL }}">전체 보기 →</a></div>
+{{/* ── 일일보고서 ─────────────────────────────────────── */}}
+{{- if gt (len $topDaily) 0 }}
+{{- $head := index $topDaily 0 }}
+{{- $side := after 1 $topDaily }}
+<div class="section-label">
+  <h2>일일보고서</h2>
+  <a class="more" href="{{ "categories/일일보고서/" | relURL }}">전체 보기 →</a>
+</div>
 <div class="feat-grid">
-  <a class="feat-card lg" href="{{ .RelPermalink }}">
+  <a class="feat-card lg" href="{{ $head.RelPermalink }}">
     <div>
       <div class="post-row__meta">
-        <span class="badge badge--cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
-        <span>{{ .Date.Format "2006.01.02" }}</span><span class="sep"></span><span>읽기 {{ .Params.reading }}분</span>
+        <span class="badge badge--cat">일일보고서</span>
+        <span>{{ $head.Date.Format "2006.01.02" }}</span>
+        {{- with $head.Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
       </div>
-      <h3>{{ .Title }}</h3>
-      <p class="post-row__excerpt">{{ .Params.lede | truncate 130 }}</p>
+      <h3>{{ $head.Title }}</h3>
+      <p class="post-row__excerpt">{{ $head.Params.lede | truncate 130 }}</p>
     </div>
     <div style="display:flex;gap:22px;margin-top:18px">
-      {{- range first 3 .Params.snapshot }}<div class="kv" style="text-align:left"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>{{ end }}
+      {{- range first 3 $head.Params.snapshot }}
+      <div class="kv" style="text-align:left"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>
+      {{- end }}
     </div>
   </a>
-  {{- $rest := after 1 $reports }}
-  {{- if gt (len $rest) 0 }}
+  {{- if gt (len $side) 0 }}
   <div class="feat-side">
-    {{- range first 2 $rest }}
+    {{- range $side }}
     <a class="feat-card" href="{{ .RelPermalink }}">
-      <div class="post-row__meta"><span class="badge badge--cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span><span>{{ .Date.Format "2006.01.02" }}</span></div>
+      <div class="post-row__meta">
+        <span class="badge badge--cat">일일보고서</span>
+        <span>{{ .Date.Format "2006.01.02" }}</span>
+      </div>
       <h3>{{ .Title }}</h3>
       <p class="post-row__excerpt">{{ .Params.lede | truncate 90 }}</p>
     </a>
@@ -51,12 +74,42 @@
 </div>
 {{- end }}
 
-{{- $archive := $posts }}
-{{- if $latest }}{{ $archive = $posts | first 999 | after 1 }}{{ end }}
+{{/* ── 주간레시피 ─────────────────────────────────────── */}}
+{{- if gt (len $topWeekly) 0 }}
+<div class="section-label">
+  <h2>주간레시피</h2>
+  <a class="more" href="{{ "categories/주간레시피/" | relURL }}">전체 보기 →</a>
+</div>
+<div class="grid-2">
+  {{- range $topWeekly }}
+  <a class="feat-card" href="{{ .RelPermalink }}">
+    <div class="post-row__meta">
+      <span class="badge badge--cat">주간레시피</span>
+      {{- with .Params.week_range }}<span>{{ . }}</span>{{ else }}<span>{{ .Date.Format "2006.01.02" }}</span>{{ end }}
+      {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
+    </div>
+    <h3>{{ .Title }}</h3>
+    <p class="post-row__excerpt">{{ cond (ne .Params.lede "") .Params.lede .Description | truncate 110 }}</p>
+    {{- if .Params.snapshot }}
+    <div style="display:flex;gap:22px;margin-top:16px">
+      {{- range first 3 .Params.snapshot }}
+      <div class="kv" style="text-align:left"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>
+      {{- end }}
+    </div>
+    {{- end }}
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+
+{{/* ── 지난 글 — 일일·주간·투자상식을 날짜순으로 섞는다 ──── */}}
 {{- if gt (len $archive) 0 }}
-<div class="section-label"><h2>지난 보고서</h2><a class="more" href="{{ "posts/" | relURL }}">아카이브 →</a></div>
+<div class="section-label">
+  <h2>지난 글</h2>
+  <a class="more" href="{{ "posts/" | relURL }}">아카이브 →</a>
+</div>
 <div class="post-list">
-  {{- range $archive }}
+  {{- range first 12 $archive }}
   <a class="post-row" href="{{ .RelPermalink }}">
     <div class="post-row__main">
       <div class="post-row__meta">
