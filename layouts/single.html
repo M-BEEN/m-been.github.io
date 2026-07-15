@@ -174,6 +174,7 @@
       <div class="sec__head"><span class="sec__num">{{ index $num "insights" }}</span><h2 class="sec__title">매매 인사이트</h2></div>
       <div class="insight-grid">
         {{- range . }}
+        {{- $card := . }}
         <div class="insight">
           <div class="insight__top">
             <div class="insight__name">{{ .name }} <span class="code num">{{ .code }}</span></div>
@@ -185,6 +186,12 @@
             {{- with .trend_view }}<div class="irow"><span class="lab">추세</span><span class="val">{{ . }}</span></div>{{ end }}
             {{- with .risk }}<div class="irow"><span class="lab">리스크</span><span class="val">{{ . }}</span></div>{{ end }}
           </div>
+          {{- with .chart_image }}
+          <figure class="insight__chart">
+            <img src="{{ . }}" loading="lazy" decoding="async" alt="{{ $card.name }} 일봉 차트 — 이동평균 5·20·60선과 일목균형표 구름">
+            <figcaption>일봉 · 이동평균 <b style="color:#0ea5e9">5</b>·<b style="color:#f59e0b">20</b>·<b style="color:#7c3aed">60</b> · 일목균형표 구름</figcaption>
+          </figure>
+          {{- end }}
           <div class="insight__concl"><span class="lab">결론</span><span>{{ .conclusion }}{{ with .source }} · <a class="src" href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</span></div>
         </div>
         {{- end }}
