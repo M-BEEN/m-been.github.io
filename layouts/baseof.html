@@ -9,6 +9,9 @@
 {{- with .Site.Params.googleSiteVerification }}
 <meta name="google-site-verification" content="{{ . }}">
 {{- end }}
+{{- with .Site.Params.naverSiteVerification }}
+<meta name="naver-site-verification" content="{{ . }}">
+{{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
