@@ -35,6 +35,10 @@ enableGitInfo = false
   # 구글 서치콘솔 'HTML 태그' 인증 코드(content 값만). 서치콘솔에서 발급받아 붙여넣으면
   # <head> 에 google-site-verification 메타태그가 출력된다. 인증 후에도 남겨둘 것.
   googleSiteVerification = "DUgARfMVJZfQkfIT17I0JUnQv5zYUiwe7VbRH8eZIcQ"
+  # 네이버 서치어드바이저 소유확인 코드(content 값만). 구글과 별개 채널이고,
+  # 국내 증시 콘텐츠는 네이버 유입 비중이 크다. 인증 후 태그를 지우면 소유확인이
+  # 풀리므로 남겨둘 것.
+  naverSiteVerification = "7a1f527266f67383f1497dc7d16abac55a18c13b"
 
 [params.homeInfoParams]
   Title = "한국증시 레시피 🍳"
