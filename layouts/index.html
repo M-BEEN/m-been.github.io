@@ -6,9 +6,11 @@
 {{/* 메인에 크게 거는 글. '지난 글'에서 이만큼을 빼야 중복이 안 생긴다.
      예전엔 상단은 isreport 에서 뽑고 아카이브는 전체에서 after 1 로 잘라내서,
      같은 날짜에 투자상식 글이 있으면 최신 일일보고서가 아래에 또 나왔다. */}}
+{{- $guides   := where $posts "Params.categories" "intersect" (slice "투자상식") }}
 {{- $topDaily  := first 3 $dailies }}
 {{- $topWeekly := first 2 $weeklies }}
-{{- $featured  := union $topDaily $topWeekly }}
+{{- $topGuide  := first 3 $guides }}
+{{- $featured  := union (union $topDaily $topWeekly) $topGuide }}
 {{- $archive   := complement $featured $posts }}
 
 {{- $latest := "" }}{{ if gt (len $dailies) 0 }}{{ $latest = index $dailies 0 }}{{ end }}
@@ -120,6 +122,31 @@
       {{- end }}
     </div>
     {{- end }}
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+
+{{/* ── 투자상식 ─────────────────────────────────────────
+     날짜에 묶이지 않아 오래 읽히는 글이라 '지난 글' 더미에 섞이면 금방 묻힌다.
+     별도 섹션으로 올려 홈에서 항상 링크되게 한다. */}}
+{{- if gt (len $topGuide) 0 }}
+<div class="section-label">
+  <h2>투자상식</h2>
+  <a class="more" href="{{ "categories/투자상식/" | relURL }}">전체 보기 →</a>
+</div>
+<div class="guide-grid">
+  {{- range $topGuide }}
+  <a class="feat-card" href="{{ .RelPermalink }}">
+    <div class="post-row__meta">
+      <span class="badge badge--soft">투자상식</span>
+      {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
+    </div>
+    <h3>{{ .Title }}</h3>
+    {{/* 투자상식 글엔 lede·description 이 없다. 그럴 땐 본문 요약으로 채운다. */}}
+    {{- $ex := cond (ne .Params.lede "") .Params.lede .Description }}
+    {{- if not $ex }}{{ $ex = .Summary | plainify }}{{ end }}
+    <p class="post-row__excerpt">{{ $ex | truncate 110 }}</p>
   </a>
   {{- end }}
 </div>

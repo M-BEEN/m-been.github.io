@@ -100,7 +100,11 @@
     <div>
       <a class="brand" href="{{ site.Home.RelPermalink }}"><img class="brand__mark" src="{{ "brand/mark.png" | relURL }}" alt="한국증시 레시피" width="26" height="26"><span>{{ .Site.Title }}</span></a>
       <div style="margin-top:8px">매일 아침, 그날의 증시를 한 그릇에.</div>
+      {{/* 아카이브·태그 허브는 여기서만 링크된다. 빼면 두 페이지가 고아가 되고,
+           태그를 거쳐 이어지던 글 사이의 경로도 함께 끊긴다. */}}
       <div class="footer-links">
+        <a href="{{ "posts/" | relURL }}">아카이브</a>
+        <a href="{{ "tags/" | relURL }}">태그</a>
         <a href="{{ "about/" | relURL }}">소개</a>
         <a href="{{ "privacy/" | relURL }}">개인정보처리방침</a>
         <a href="{{ "contact/" | relURL }}">연락처</a>

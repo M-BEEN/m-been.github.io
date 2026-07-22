@@ -244,6 +244,8 @@
   </div>
 </div>
 
+{{ partial "post-foot.html" . }}
+
 {{- else if .Params.isweekly }}
 {{/* ===================== 주간레시피 (심층 에세이) ===================== */}}
 
@@ -300,6 +302,8 @@
   </div>
 </div>
 
+{{ partial "post-foot.html" . }}
+
 {{- else }}
 {{/* ===================== 일반 글(소개/정책/연락처 등) ===================== */}}
 <article class="art-head" style="border-bottom:0;padding-bottom:6px">
@@ -312,5 +316,7 @@
   <h1 class="art-title">{{ .Title }}</h1>
 </article>
 <div class="prose page-prose" style="padding:14px 0 60px;max-width:760px">{{ .Content }}</div>
+{{/* 소개·연락처·개인정보처리방침에는 붙이지 않는다 — 글이 아니라 안내 페이지다. */}}
+{{- if eq .Section "posts" }}{{ partial "post-foot.html" . }}{{ end }}
 {{- end }}
 {{ end }}

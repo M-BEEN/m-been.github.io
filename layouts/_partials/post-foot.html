@@ -1,0 +1,86 @@
+{{/* 글 하단 내부 링크 블록 — 태그 · 이전/다음 · 관련 글.
+
+     이게 없던 동안 글 페이지의 내부 링크는 헤더·푸터가 전부였다(막다른 골목).
+     크롤러가 글에서 글로 이동할 경로가 없어 홈만 색인되고 하위 페이지는
+     '등록되지 않음' 상태로 남았고, 사이트맵에만 있고 어디서도 링크되지 않는
+     태그 페이지 20여 개는 아예 도달 불가였다. 세 블록 모두 그 도달성을 만든다. */}}
+
+{{- $posts := where .Site.RegularPages "Section" "posts" }}
+
+{{- $newer := .NextInSection }}
+{{- $older := .PrevInSection }}
+
+{{/* 관련 글 — 같은 카테고리의 최신 글.
+     자기 자신은 물론 바로 위/아래 블록의 이전·다음 글도 빼야 한다. 안 그러면
+     최신 글에서 '이전 글'과 관련 글 첫 줄이 같은 글로 겹친다.
+     complement 는 (제외할 것) (대상) 순서다. */}}
+{{- $related := slice }}
+{{- with .Params.categories }}
+  {{- $cat := index . 0 }}
+  {{- $same := where $posts "Params.categories" "intersect" (slice $cat) }}
+  {{- $exclude := slice $ }}
+  {{- with $newer }}{{ $exclude = $exclude | append . }}{{ end }}
+  {{- with $older }}{{ $exclude = $exclude | append . }}{{ end }}
+  {{- $related = first 3 (complement $exclude $same) }}
+{{- end }}
+
+{{/* 본문 폭에 맞춘다. 보고서·주간글은 좌측 목차(212px + gap 40px)가 있는 art-layout
+     아래에 붙으므로 그만큼 밀고, 투자상식 글은 본문이 760px 이라 거기에 맞춘다.
+     안 맞추면 하단 블록만 화면 전체로 퍼져 본문과 어긋난다. */}}
+<nav class="post-foot {{ if or .Params.isreport .Params.isweekly }}post-foot--offset{{ else }}post-foot--narrow{{ end }}" aria-label="관련 문서">
+
+  {{- with .Params.tags }}
+  <div class="post-foot__tags">
+    {{- range . }}
+    <a class="tagchip" href="{{ (printf "tags/%s/" (urlize .)) | relURL }}">#{{ . }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{/* Hugo 의 Next/Prev 는 섹션 목록 순서(날짜 내림차순) 기준이라
+       Next 가 더 최신이다. 라벨을 시간 방향에 맞춰 붙인다. */}}
+  {{- if or $newer $older }}
+  <div class="post-foot__nav">
+    {{- with $older }}
+    <a class="pnav pnav--prev" href="{{ .RelPermalink }}" rel="prev">
+      <span class="pnav__dir">← 이전 글</span>
+      <span class="pnav__title">{{ .Title }}</span>
+    </a>
+    {{- else }}<span></span>{{ end }}
+    {{- with $newer }}
+    <a class="pnav pnav--next" href="{{ .RelPermalink }}" rel="next">
+      <span class="pnav__dir">다음 글 →</span>
+      <span class="pnav__title">{{ .Title }}</span>
+    </a>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- if gt (len $related) 0 }}
+  <div class="post-foot__related">
+    <div class="section-label"><h2>같은 분류의 다른 글</h2></div>
+    <div class="post-list">
+      {{- range $related }}
+      <a class="post-row" href="{{ .RelPermalink }}">
+        <div class="post-row__main">
+          <div class="post-row__meta">
+            {{- with .Params.categories }}<span class="badge badge--cat">{{ index . 0 }}</span>{{ end }}
+            <span>{{ .Date.Format "2006.01.02" }}</span>
+            {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
+          </div>
+          <h3 class="post-row__title">{{ .Title }}</h3>
+          {{/* 투자상식 글엔 lede·description 이 없다. 그럴 땐 본문 요약으로 채운다. */}}
+          {{- $ex := cond (ne .Params.lede "") .Params.lede .Description }}
+          {{- if not $ex }}{{ $ex = .Summary | plainify }}{{ end }}
+          <p class="post-row__excerpt">{{ $ex | truncate 110 }}</p>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+
+  <div class="post-foot__more">
+    <a href="{{ "posts/" | relURL }}">전체 글 아카이브 →</a>
+  </div>
+</nav>
