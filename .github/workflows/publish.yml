@@ -43,10 +43,14 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+        # ⚠ --baseURL 을 주지 않는다. hugo.toml 의 baseURL 이 유일한 기준이다.
+        # 예전엔 --baseURL "${{ steps.pages.outputs.base_url }}/" 를 넘겼는데,
+        # configure-pages 는 "Pages 설정에 등록된 도메인"을 반환하므로 hugo.toml 을 덮어썼다.
+        # 커스텀 도메인 전환(2026-08-01) 때 Pages 설정 등록 전에 배포가 돌아,
+        # baseURL 을 yieldrecipe.com 으로 바꿨는데도 canonical·sitemap·robots 가
+        # 전부 구 도메인으로 빌드됐다(로컬 빌드는 정상이라 더 늦게 발견됐다).
         run: |
-          hugo \
-            --gc --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
