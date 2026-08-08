@@ -1,3 +1,8 @@
-# Google AdSense 승인 후, 아래 줄의 pub-XXXXXXXXXXXXXXXX 를 본인 게시자 ID로 교체하고
-# 맨 앞 '#'(주석) 을 제거하세요. (가운데 ID만 본인 것, 나머지는 고정)
+# Google AdSense 게시자 ID를 아래 줄의 pub-XXXXXXXXXXXXXXXX 자리에 넣고 맨 앞 '#' 을 제거하세요.
+# (가운데 ID만 본인 것, 나머지 세 값은 Google 고정값)
+#
+# ⚠ 'ca-' 접두사는 빼고 'pub-...' 부터 적는다 — hugo.toml 의 adsenseClient 는 'ca-pub-...' 이지만
+#   ads.txt 규격은 'pub-...' 이다. 접두사를 그대로 붙이면 무효 처리된다.
+#
+# 승인 전에 채워도 무해하며, 애드센스가 ads.txt 방식으로 소유확인을 요구하면 이 파일이 근거가 된다.
 # google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

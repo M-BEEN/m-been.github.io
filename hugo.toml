@@ -36,7 +36,12 @@ enableGitInfo = false
   ShowWordCount = false
   ShowShareButtons = false
   hideFooter = false
-  # AdSense 승인 후 'ca-pub-XXXXXXXXXXXXXXXX' 로 채우면 자동광고 스크립트가 활성화됨
+  # Google AdSense 게시자 ID('ca-pub-XXXXXXXXXXXXXXXX').
+  # ⚠ '승인 후'가 아니라 **신청 전에** 채워야 한다 — 애드센스는 사이트에 코드가 올라가 있어야
+  #   검토를 시작한다. 비어 있으면 "사이트에 연결할 수 없음"으로 검토가 진행되지 않는다.
+  #   게시자 ID 는 애드센스 가입 직후(사이트 승인 전) 바로 발급된다.
+  # 채우면 <head> 에 두 가지가 함께 출력된다 — 소유확인 메타태그 + 광고 스크립트.
+  # 애드센스가 요구하는 확인 방식이 셋(스크립트 / 메타태그 / ads.txt) 중 무엇이든 대응된다.
   adsenseClient = ""
   # 구글 서치콘솔 'HTML 태그' 인증 코드(content 값만). 서치콘솔에서 발급받아 붙여넣으면
   # <head> 에 google-site-verification 메타태그가 출력된다. 인증 후에도 남겨둘 것.
