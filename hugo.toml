@@ -65,6 +65,18 @@ enableGitInfo = false
 [markup.goldmark.renderer]
   unsafe = true
 
+# 취소선 확장을 끈다. GFM strikethrough 는 `~~양쪽~~` 뿐 아니라 `~한쪽~` 도 취소선으로
+# 처리한다. 그런데 본문에는 `1976~2022년`, `08:00~08:50`, `520~560억달러` 같은 범위 표기가
+# 상시로 나오고, 한 문단에 둘 이상 등장하면 그 사이 문장이 통째로 <del> 이 된다.
+# 실제 사고(2026-08-11 에 전부 수정): guide-averaging-in 의 뱅가드 연구 인용 124자,
+# 2026-07-19-weekly 의 TSMC capex 문장, guide-order-types 의 NXT 거래시간 줄.
+# 빌드는 성공하므로 배포된 화면을 봐야만 발견된다.
+# 취소선은 이 사이트에서 쓴 적이 없고(지금까지 나온 <del> 은 전부 사고였다), 일일·주간 글은
+# report-service 가 자동 생성하므로 원고 쪽 규칙만으로는 재발을 막을 수 없어 여기서 끈다.
+# 다른 확장(table·linkify·taskList 등)은 명시하지 않으면 기본값 그대로 켜져 있다.
+[markup.goldmark.extensions]
+  strikethrough = false
+
 [outputs]
   home = ["HTML", "RSS"]
 
