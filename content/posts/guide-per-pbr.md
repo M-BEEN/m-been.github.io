@@ -3,7 +3,7 @@ title: "PER 4배짜리 반도체주가 꼭지였던 이유 — PER과 PBR을 같
 date: 2026-07-16
 draft: false
 categories: ["투자상식"]
-tags: ["PER", "PBR", "ROE", "밸류에이션"]
+tags: ["밸류에이션"]
 description: "PER은 이익을, PBR은 자산을 본다. 둘 중 하나만 보면 반드시 속는 지점이 있고, 그 사이를 ROE가 잇는다."
 ---
 

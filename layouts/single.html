@@ -40,12 +40,14 @@
 {{/* 존재하는 섹션만 목차/번호 구성 */}}
 {{- $labels := dict "overview" "총평" "macro" "지수·매크로 심층" "sectors" "섹터 전광판" "leaders" "주도주 · 신호주" "watchlist" "관심 종목" "insights" "매매 인사이트" "issues" "경제 이슈" "schedule" "향후 일정 · 부동산 · 관전 포인트" "disclaimer" "면책 고지" }}
 {{- $secs := slice }}
+{{/* 순서: 고유 분석(총평·인사이트)이 표·전광판보다 먼저다. 페이지의 첫인상이
+     "숫자 나열"이 아니라 "그날의 해석"이 되도록 — 저가치 콘텐츠 판정 대응이기도 하다. */}}
 {{- if .Params.overview }}{{ $secs = $secs | append "overview" }}{{ end }}
+{{- if .Params.insights }}{{ $secs = $secs | append "insights" }}{{ end }}
 {{- if or .Params.macro_insight .Params.indices_kr }}{{ $secs = $secs | append "macro" }}{{ end }}
 {{- if .Params.sectors }}{{ $secs = $secs | append "sectors" }}{{ end }}
 {{- if or .Params.signals_leaders .Params.signals_emerging }}{{ $secs = $secs | append "leaders" }}{{ end }}
 {{- if .Params.watchlist }}{{ $secs = $secs | append "watchlist" }}{{ end }}
-{{- if .Params.insights }}{{ $secs = $secs | append "insights" }}{{ end }}
 {{- if .Params.issues }}{{ $secs = $secs | append "issues" }}{{ end }}
 {{- if or .Params.schedule .Params.realestate .Params.outlook }}{{ $secs = $secs | append "schedule" }}{{ end }}
 {{- $secs = $secs | append "disclaimer" }}
@@ -69,6 +71,36 @@
     <section class="sec" id="overview">
       <div class="sec__head"><span class="sec__num">{{ index $num "overview" }}</span><h2 class="sec__title">총평</h2></div>
       <div class="prose">{{ range split .Params.overview "\n\n" }}{{ $p := strings.TrimSpace . }}{{ with $p }}<p>{{ . }}</p>{{ end }}{{ end }}</div>
+    </section>
+    {{- end }}
+
+    {{- with .Params.insights }}
+    <section class="sec" id="insights">
+      <div class="sec__head"><span class="sec__num">{{ index $num "insights" }}</span><h2 class="sec__title">매매 인사이트</h2></div>
+      <div class="insight-grid">
+        {{- range . }}
+        {{- $card := . }}
+        <div class="insight">
+          <div class="insight__top">
+            <div class="insight__name">{{ .name }} <span class="code num">{{ .code }}</span></div>
+            <span class="badge badge--{{ .badge }}">{{ .verdict }}</span>
+          </div>
+          <div class="insight__rows">
+            {{- with .metrics }}<div class="irow"><span class="lab">지표</span><span class="val num">{{ . }}</span></div>{{ end }}
+            {{- with .catalyst }}<div class="irow"><span class="lab">촉발요인</span><span class="val">{{ . }}</span></div>{{ end }}
+            {{- with .trend_view }}<div class="irow"><span class="lab">추세</span><span class="val">{{ . }}</span></div>{{ end }}
+            {{- with .risk }}<div class="irow"><span class="lab">리스크</span><span class="val">{{ . }}</span></div>{{ end }}
+          </div>
+          {{- with .chart_image }}
+          <figure class="insight__chart">
+            <img src="{{ . }}" loading="lazy" decoding="async" alt="{{ $card.name }} 일봉 차트 — 이동평균 5·20·60선과 일목균형표 구름">
+            <figcaption>일봉 · 이동평균 <b style="color:#0ea5e9">5</b>·<b style="color:#f59e0b">20</b>·<b style="color:#7c3aed">60</b> · 일목균형표 구름</figcaption>
+          </figure>
+          {{- end }}
+          <div class="insight__concl"><span class="lab">결론</span><span>{{ .conclusion }}{{ with .source }} · <a class="src" href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</span></div>
+        </div>
+        {{- end }}
+      </div>
     </section>
     {{- end }}
 
@@ -169,36 +201,6 @@
     </section>
     {{- end }}
 
-    {{- with .Params.insights }}
-    <section class="sec" id="insights">
-      <div class="sec__head"><span class="sec__num">{{ index $num "insights" }}</span><h2 class="sec__title">매매 인사이트</h2></div>
-      <div class="insight-grid">
-        {{- range . }}
-        {{- $card := . }}
-        <div class="insight">
-          <div class="insight__top">
-            <div class="insight__name">{{ .name }} <span class="code num">{{ .code }}</span></div>
-            <span class="badge badge--{{ .badge }}">{{ .verdict }}</span>
-          </div>
-          <div class="insight__rows">
-            {{- with .metrics }}<div class="irow"><span class="lab">지표</span><span class="val num">{{ . }}</span></div>{{ end }}
-            {{- with .catalyst }}<div class="irow"><span class="lab">촉발요인</span><span class="val">{{ . }}</span></div>{{ end }}
-            {{- with .trend_view }}<div class="irow"><span class="lab">추세</span><span class="val">{{ . }}</span></div>{{ end }}
-            {{- with .risk }}<div class="irow"><span class="lab">리스크</span><span class="val">{{ . }}</span></div>{{ end }}
-          </div>
-          {{- with .chart_image }}
-          <figure class="insight__chart">
-            <img src="{{ . }}" loading="lazy" decoding="async" alt="{{ $card.name }} 일봉 차트 — 이동평균 5·20·60선과 일목균형표 구름">
-            <figcaption>일봉 · 이동평균 <b style="color:#0ea5e9">5</b>·<b style="color:#f59e0b">20</b>·<b style="color:#7c3aed">60</b> · 일목균형표 구름</figcaption>
-          </figure>
-          {{- end }}
-          <div class="insight__concl"><span class="lab">결론</span><span>{{ .conclusion }}{{ with .source }} · <a class="src" href="{{ . }}" target="_blank" rel="noopener">출처</a>{{ end }}</span></div>
-        </div>
-        {{- end }}
-      </div>
-    </section>
-    {{- end }}
-
     {{- with .Params.issues }}
     <section class="sec" id="issues">
       <div class="sec__head"><span class="sec__num">{{ index $num "issues" }}</span><h2 class="sec__title">경제 이슈</h2></div>
@@ -238,7 +240,7 @@
 
     <section class="sec" id="disclaimer">
       <div class="sec__head"><span class="sec__num">{{ index $num "disclaimer" }}</span><h2 class="sec__title">면책 고지</h2></div>
-      <div class="disclaimer"><strong>투자 유의 안내.</strong> 본 자료는 정보 제공을 목적으로 작성된 것으로, 특정 종목의 매수·매도를 권유하지 않습니다. 수치와 코멘트는 작성 시점 기준이며 실제와 다를 수 있습니다. 모든 투자의 최종 판단과 책임은 투자자 본인에게 있으며, 과거의 수익률이 미래의 수익을 보장하지 않습니다.</div>
+      <div class="disclaimer"><strong>투자 유의 안내.</strong> 본 자료는 정보 제공을 목적으로 작성된 것으로, 특정 종목의 매수·매도를 권유하지 않습니다. 수치와 코멘트는 작성 시점 기준이며 실제와 다를 수 있습니다. 모든 투자의 최종 판단과 책임은 투자자 본인에게 있으며, 과거의 수익률이 미래의 수익을 보장하지 않습니다. 수치는 한국거래소·한국투자증권 API 등 공개 데이터에서 장 마감 후 확정 종가 기준으로 수집합니다 — 어떤 데이터로 어떻게 쓰는지는 <a href="{{ "about/" | relURL }}">소개 페이지의 데이터 출처와 작성 기준</a>에 있습니다. 오류를 발견하시면 <a href="{{ "contact/" | relURL }}">연락처</a>로 알려 주세요.</div>
     </section>
 
   </div>
@@ -297,7 +299,7 @@
     <div class="prose page-prose weekly-prose">{{ .Content }}</div>
     <section class="sec" id="disclaimer" style="border-top:1px solid var(--border);margin-top:30px;padding-top:26px">
       <div class="sec__head"><span class="sec__num">{{ printf "%02d" (add (len $toc) 1) }}</span><h2 class="sec__title">면책 고지</h2></div>
-      <div class="disclaimer"><strong>투자 유의 안내.</strong> 본 자료는 정보 제공을 목적으로 작성된 것으로, 특정 종목의 매수·매도를 권유하지 않습니다. 수치와 코멘트는 작성 시점 기준이며 실제와 다를 수 있습니다. 모든 투자의 최종 판단과 책임은 투자자 본인에게 있으며, 과거의 수익률이 미래의 수익을 보장하지 않습니다.</div>
+      <div class="disclaimer"><strong>투자 유의 안내.</strong> 본 자료는 정보 제공을 목적으로 작성된 것으로, 특정 종목의 매수·매도를 권유하지 않습니다. 수치와 코멘트는 작성 시점 기준이며 실제와 다를 수 있습니다. 모든 투자의 최종 판단과 책임은 투자자 본인에게 있으며, 과거의 수익률이 미래의 수익을 보장하지 않습니다. 수치는 한국거래소·한국투자증권 API 등 공개 데이터에서 장 마감 후 확정 종가 기준으로 수집합니다 — 어떤 데이터로 어떻게 쓰는지는 <a href="{{ "about/" | relURL }}">소개 페이지의 데이터 출처와 작성 기준</a>에 있습니다. 오류를 발견하시면 <a href="{{ "contact/" | relURL }}">연락처</a>로 알려 주세요.</div>
     </section>
   </div>
 </div>
