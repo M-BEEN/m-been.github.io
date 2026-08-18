@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">PER, PBR, ROE의 관계</title>
+  <desc id="desc">PER은 이익 대비 가격, ROE는 자본을 이익으로 바꾸는 효율, PBR은 자산 대비 가격을 뜻하며 PBR은 PER과 ROE를 곱한 값이라는 관계도</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#2f3b35" flood-opacity=".12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6 0 12Z" fill="#66746c"/>
+    </marker>
+    <style>
+      .sans { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+      .label { font-size: 22px; font-weight: 700; letter-spacing: -.4px; }
+      .term { font-size: 42px; font-weight: 800; }
+      .formula { font-size: 27px; font-weight: 750; }
+      .note { font-size: 19px; font-weight: 550; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" rx="32" fill="#f4efe5"/>
+  <path d="M0 92C180 54 328 129 491 88S850 47 1200 105V0H0Z" fill="#e8dfce" opacity=".7"/>
+
+  <text x="600" y="72" text-anchor="middle" class="sans label" fill="#38443e">세 지표는 따로가 아니라 하나의 식으로 연결된다</text>
+
+  <g filter="url(#shadow)">
+    <rect x="66" y="144" width="300" height="258" rx="25" fill="#fffdf8" stroke="#c55f45" stroke-width="3"/>
+    <rect x="450" y="144" width="300" height="258" rx="25" fill="#fffdf8" stroke="#26746d" stroke-width="3"/>
+    <rect x="834" y="144" width="300" height="258" rx="25" fill="#fffdf8" stroke="#b78b29" stroke-width="3"/>
+  </g>
+
+  <text x="216" y="218" text-anchor="middle" class="sans term" fill="#b64f39">PER</text>
+  <text x="216" y="258" text-anchor="middle" class="sans label" fill="#4c5651">이익 대비 가격</text>
+  <rect x="111" y="289" width="210" height="70" rx="14" fill="#f6e3dc"/>
+  <text x="216" y="319" text-anchor="middle" class="sans note" fill="#74382b">주가</text>
+  <line x1="151" y1="328" x2="281" y2="328" stroke="#9a4a37" stroke-width="2"/>
+  <text x="216" y="352" text-anchor="middle" class="sans note" fill="#74382b">주당순이익 EPS</text>
+
+  <text x="600" y="218" text-anchor="middle" class="sans term" fill="#1e665f">ROE</text>
+  <text x="600" y="258" text-anchor="middle" class="sans label" fill="#4c5651">자본의 이익 효율</text>
+  <rect x="495" y="289" width="210" height="70" rx="14" fill="#dcece8"/>
+  <text x="600" y="319" text-anchor="middle" class="sans note" fill="#22544e">주당순이익 EPS</text>
+  <line x1="535" y1="328" x2="665" y2="328" stroke="#39756e" stroke-width="2"/>
+  <text x="600" y="352" text-anchor="middle" class="sans note" fill="#22544e">주당순자산 BPS</text>
+
+  <text x="984" y="218" text-anchor="middle" class="sans term" fill="#9a701a">PBR</text>
+  <text x="984" y="258" text-anchor="middle" class="sans label" fill="#4c5651">자산 대비 가격</text>
+  <rect x="879" y="289" width="210" height="70" rx="14" fill="#f3e9c9"/>
+  <text x="984" y="319" text-anchor="middle" class="sans note" fill="#6f5417">주가</text>
+  <line x1="919" y1="328" x2="1049" y2="328" stroke="#9a7625" stroke-width="2"/>
+  <text x="984" y="352" text-anchor="middle" class="sans note" fill="#6f5417">주당순자산 BPS</text>
+
+  <path d="M375 273H430" fill="none" stroke="#66746c" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="402" y="250" text-anchor="middle" class="sans formula" fill="#56635c">×</text>
+  <path d="M759 273H814" fill="none" stroke="#66746c" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="786" y="250" text-anchor="middle" class="sans formula" fill="#56635c">=</text>
+
+  <rect x="145" y="464" width="910" height="116" rx="24" fill="#34463e"/>
+  <text x="600" y="517" text-anchor="middle" class="sans formula" fill="#fffdf8">PBR = PER × ROE</text>
+  <text x="600" y="554" text-anchor="middle" class="sans note" fill="#d8e1dc">같은 PER이라면 ROE가 높을수록 시장이 허용하는 PBR도 높아진다</text>
+
+  <text x="600" y="625" text-anchor="middle" class="sans note" fill="#66716b">※ 같은 시점·같은 기준의 EPS와 BPS를 사용했을 때 성립</text>
+</svg>
