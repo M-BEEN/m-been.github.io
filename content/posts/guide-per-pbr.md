@@ -35,7 +35,7 @@ PBR 0.4배는 순자산의 40%만 주고 회사를 산다는 뜻이다. 산술�
 
 ## 두 지표를 잇는 다리는 ROE다
 
-![자산을 이익으로 바꾸는 효율인 ROE가 PER과 PBR 사이를 연결하는 모습](/images/guides/per-pbr-roe-bridge.webp)
+![PER은 이익 대비 가격, ROE는 자본의 이익 효율, PBR은 자산 대비 가격이며 PBR은 PER과 ROE를 곱한 값이라는 관계도](/images/guides/per-pbr-roe-relationship.svg)
 
 PER과 PBR은 따로 노는 지표가 아니다. 정의를 그대로 대입하면 하나의 등식으로 묶인다.
 
