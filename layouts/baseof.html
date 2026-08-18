@@ -55,6 +55,24 @@
       "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" ("brand/mark.png" | absURL))) }}
 <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
 {{- end }}
+{{- if and (eq .Section "posts") (not .Params.isreport) (not .Params.isweekly) }}
+{{/* 투자상식(일반 글)용 Article 스키마. 보고서·주간(NewsArticle)과 달리 시의성 없는
+     해설 글이므로 Article 이 맞다. author·publisher 를 명시해 글의 출처 신호를 만든다. */}}
+{{- $schema := dict
+      "@context" "https://schema.org"
+      "@type" "Article"
+      "headline" .Title
+      "description" $desc
+      "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+      "mainEntityOfPage" .Permalink
+      "url" .Permalink
+      "image" (slice ("brand/mark.png" | absURL))
+      "inLanguage" "ko-KR"
+      "author" (dict "@type" "Organization" "name" .Site.Params.author "url" .Site.Home.Permalink)
+      "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" ("brand/mark.png" | absURL))) }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- end }}
 {{- range .AlternativeOutputFormats }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
 {{- end }}
