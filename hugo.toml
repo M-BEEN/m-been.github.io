@@ -103,6 +103,12 @@ enableGitInfo = false
   weight = 30
 
 [[menu.main]]
+  identifier = "lab"
+  name = "실험노트"
+  url = "/categories/실험노트/"
+  weight = 40
+
+[[menu.main]]
   identifier = "about"
   name = "소개"
   url = "/about/"
