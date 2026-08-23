@@ -397,14 +397,21 @@ table.dt .src { color: var(--accent); font-size: 11.5px; font-weight: 600; white
   display: block; width: 100%; border: 1px solid var(--border); border-radius: 14px;
   box-shadow: 0 16px 38px rgba(12, 24, 45, .12);
 }
-/* 마크다운 표 — 좁은 화면에서 가로 스크롤(display:block 이라야 overflow-x 가 먹는다) */
+/* 마크다운 표 — 가로 스크롤은 래퍼(.table-wrap, render-table.html 훅)가 맡는다.
+   table 자체에 display:block 을 주면 테두리만 100% 로 늘어나고 내용은 shrink-to-fit 으로
+   남아 박스와 어긋난다. table 은 진짜 table 로 두고 폭을 채우게 한다. */
+.page-prose .table-wrap {
+  overflow-x: auto; margin: 18px 0 22px;
+  border: 1px solid var(--border); border-radius: 10px;
+}
 .page-prose table {
-  display: block; width: 100%; overflow-x: auto; border-collapse: collapse;
-  margin: 18px 0 22px; font-size: 14px; border: 1px solid var(--border); border-radius: 10px;
+  width: 100%; border-collapse: collapse; font-size: 14px;
 }
 .page-prose table th, .page-prose table td { padding: 10px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
 .page-prose table th { font-weight: 700; color: var(--text-2); background: var(--bg-subtle); white-space: nowrap; }
 .page-prose table tr:last-child td { border-bottom: 0; }
+/* 숫자 열은 자릿수를 맞춰 세로로 읽히게 */
+.page-prose table td { font-variant-numeric: tabular-nums; }
 
 /* ---------- 주간레시피 에세이(.weekly-prose = art-content 안의 page-prose) ---------- */
 /* 본문 헤딩이 목차 앵커 대상 — 스티키 헤더에 가리지 않게 오프셋 */
@@ -412,7 +419,8 @@ table.dt .src { color: var(--accent); font-size: 11.5px; font-weight: 600; white
 .weekly-prose > h2:first-child, .weekly-prose > h3:first-child { margin-top: 6px; }
 .weekly-prose h2 { padding-bottom: 8px; border-bottom: 1px solid var(--border); }
 /* 마크다운 표(클래스 없는 <table>) — 좁은 화면에선 가로 스크롤 */
-.weekly-prose table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 14px; margin: 0 0 16px; }
+.weekly-prose .table-wrap { border: 0; border-radius: 0; margin: 0 0 16px; }
+.weekly-prose table { width: 100%; border-collapse: collapse; font-size: 14px; }
 .weekly-prose table th, .weekly-prose table td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; }
 .weekly-prose table th { font-weight: 700; color: var(--text-2); background: var(--bg-subtle); }
 .weekly-prose table td.num, .weekly-prose table td:not(:first-child) { font-variant-numeric: tabular-nums; }
