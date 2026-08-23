@@ -78,7 +78,10 @@
 {{- end }}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="{{ "css/recipe.css" | relURL }}">
+{{- /* 파일명에 내용 해시를 박는다. CSS 를 고쳐도 방문자 브라우저가 옛 파일을
+       캐시에서 계속 쓰면 새 HTML + 옛 CSS 조합으로 레이아웃이 깨진다. */ -}}
+{{- $css := resources.Get "css/recipe.css" | minify | fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- with .Site.Params.adsenseClient }}
 {{/* 애드센스 소유확인은 스크립트·메타태그·ads.txt 중 하나면 되는데, 신청 화면이 어느 방식을
      요구할지 미리 알 수 없다. 메타태그는 비용이 0 이므로 스크립트와 함께 내보내 어느 쪽을
