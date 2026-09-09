@@ -13,6 +13,9 @@
   </div>
   <h1 class="art-title">{{ .Title }}</h1>
   {{- with .Params.lede }}<p class="art-lede">{{ . }}</p>{{ end }}
+  {{- with .Params.technical_article }}
+  <p class="art-lede">종목 심층 분석: <a href="{{ .url }}">{{ .title }}</a></p>
+  {{- end }}
   <div class="art-updated"><span class="dot" style="background:var(--text-muted)"></span> 기준일 {{ .Params.asof }} · 종가 기준</div>
 </div>
 
