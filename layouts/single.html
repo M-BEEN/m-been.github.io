@@ -9,14 +9,20 @@
     <span class="sep"></span>
     <span>읽기 {{ .Params.reading }}분</span>
     <span class="sep"></span>
-    <span>장 마감 종합</span>
+    <span>{{ if eq .Params.kind_label "일일" }}장전 브리핑{{ else }}주간 종합{{ end }}</span>
   </div>
   <h1 class="art-title">{{ .Title }}</h1>
   {{- with .Params.lede }}<p class="art-lede">{{ . }}</p>{{ end }}
   {{- with .Params.technical_article }}
   <p class="art-lede">종목 심층 분석: <a href="{{ .url }}">{{ .title }}</a></p>
   {{- end }}
-  <div class="art-updated"><span class="dot" style="background:var(--text-muted)"></span> 기준일 {{ .Params.asof }} · 종가 기준</div>
+  <div class="art-updated"><span class="dot" style="background:var(--text-muted)"></span> 국내 시장 기준일 {{ .Params.asof }} · 해외 시장과 뉴스의 기준 시점은 본문 참조</div>
+  {{- with .Params.corrections }}
+  <aside class="art-updated" aria-label="정정 이력">
+    <strong>정정 이력</strong>
+    <ul>{{ range . }}<li>{{ .date }} · {{ .text }}</li>{{ end }}</ul>
+  </aside>
+  {{- end }}
 </div>
 
 {{/* 히어로 이미지 — 첫 화면에 뜨므로 eager 로드(LCP). hero_image 없으면 통째로 생략된다. */}}
