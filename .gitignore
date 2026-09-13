@@ -2,6 +2,7 @@
 /public/
 /resources/_gen/
 .hugo_build.lock
+__pycache__/
 
 # 로컬 검토용(완성본 HTML 덤프)
 /_review/

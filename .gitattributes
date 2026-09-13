@@ -1,0 +1,3 @@
+static/research/gap-overnight/*.csv text eol=lf
+static/research/gap-overnight/*.json text eol=lf
+static/research/gap-overnight/*.py text eol=lf

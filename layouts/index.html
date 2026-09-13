@@ -7,10 +7,12 @@
      예전엔 상단은 isreport 에서 뽑고 아카이브는 전체에서 after 1 로 잘라내서,
      같은 날짜에 투자상식 글이 있으면 최신 일일보고서가 아래에 또 나왔다. */}}
 {{- $guides   := where $posts "Params.categories" "intersect" (slice "투자상식") }}
+{{- $notes    := where $posts "Params.categories" "intersect" (slice "실험노트") }}
 {{- $topDaily  := first 3 $dailies }}
 {{- $topWeekly := first 2 $weeklies }}
 {{- $topGuide  := first 3 $guides }}
-{{- $featured  := union (union $topDaily $topWeekly) $topGuide }}
+{{- $topNotes  := first 3 $notes.ByDate.Reverse }}
+{{- $featured  := union (union (union $topDaily $topWeekly) $topGuide) $topNotes }}
 {{- $archive   := complement $featured $posts }}
 
 {{- $latest := "" }}{{ if gt (len $dailies) 0 }}{{ $latest = index $dailies 0 }}{{ end }}
@@ -125,6 +127,30 @@
   </a>
   {{- end }}
 </div>
+{{- end }}
+
+{{- if $topNotes }}
+<section aria-labelledby="experiment-notes-title">
+  <div class="section-label">
+    <h2 id="experiment-notes-title">직접 측정한 실험노트</h2>
+    <a class="more" href="{{ "categories/실험노트/" | relURL }}">전체 보기 →</a>
+  </div>
+  <p class="experiment-intro">익숙한 매매 가설을 데이터와 거래 기록으로 확인합니다. 잘 맞은 결과뿐 아니라 틀린 가설, 계산 방법과 표본의 한계도 함께 남깁니다.</p>
+  <div class="guide-grid">
+    {{- range $topNotes }}
+    <a class="feat-card" href="{{ .RelPermalink }}">
+      <div class="post-row__meta">
+        <span class="badge badge--soft">실험노트</span>
+        <span>{{ .Date.Format "2006.01.02" }}</span>
+        {{- if .Params.reproducibility }}<span class="badge badge--soft">계산식·재현 자료</span>{{ end }}
+      </div>
+      <h3>{{ .Title }}</h3>
+      {{- $excerpt := .Description | default (.Summary | plainify) }}
+      <p class="post-row__excerpt">{{ $excerpt | truncate 130 }}</p>
+    </a>
+    {{- end }}
+  </div>
+</section>
 {{- end }}
 
 {{/* ── 투자상식 ─────────────────────────────────────────
