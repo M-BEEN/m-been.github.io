@@ -1,0 +1,43 @@
+{
+  "first_return_date": "2026-08-25",
+  "last_return_date": "2026-08-27",
+  "gap": {
+    "n": 3,
+    "mean_pct": 3.333333333333336,
+    "sample_std_pct": 5.773502691896263,
+    "naive_t": 0.9999999999999998,
+    "positive_fraction": 0.3333333333333333,
+    "cumulative_log_pct": 9.531017980432493,
+    "compound_pct": 10.000000000000009
+  },
+  "intraday": {
+    "n": 3,
+    "mean_pct": -3.3333333333333326,
+    "sample_std_pct": 5.773502691896256,
+    "naive_t": -1.0,
+    "positive_fraction": 0.0,
+    "cumulative_log_pct": -10.536051565782628,
+    "compound_pct": -10.0
+  },
+  "close_to_close": {
+    "n": 3,
+    "mean_pct": 3.700743415417188e-15,
+    "sample_std_pct": 10.000000000000004,
+    "naive_t": 6.409875621278543e-16,
+    "positive_fraction": 0.3333333333333333,
+    "cumulative_log_pct": -1.0050335853501347,
+    "compound_pct": -0.9999999999999907
+  },
+  "pearson_gap_intraday": 0.49999999999999994,
+  "max_compounding_identity_error": 0.0,
+  "assumptions": [
+    "Costs excluded; index returns are not tradable strategy returns.",
+    "naive_t assumes independent observations; not a significance verdict.",
+    "PreviousDate is the previous supplied row, not a verified exchange session.",
+    "No intraday gap-fill probability, futures matching or stock verdict analysis."
+  ],
+  "input_sha256": "a751545f1499048076381894c4caea27b440df480ee80cde43014c821d5fe9fa",
+  "input_file": "sample.csv",
+  "requested_start": null,
+  "requested_end": null
+}
