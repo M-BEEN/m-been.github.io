@@ -107,6 +107,9 @@ enableGitInfo = false
   name = "종목분석"
   url = "/categories/종목분석/"
   weight = 25
+  # 글이 0편이면 헤더에서 숨긴다(빈 목록 페이지 = 얇은 페이지). baseof.html 이 params.category 로 개수 확인.
+  [menu.main.params]
+    category = "종목분석"
 
 [[menu.main]]
   identifier = "lab"

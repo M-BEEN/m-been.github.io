@@ -13,6 +13,10 @@
 <meta name="naver-site-verification" content="{{ . }}">
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
+{{- /* 글이 0편인 목록 페이지는 색인에서 뺀다(sitemap.xml 과 짝). 글이 생기면 자동으로 풀린다. */}}
+{{- if and .IsNode (not .IsHome) (eq (len .Pages) 0) }}
+<meta name="robots" content="noindex,follow">
+{{- end }}
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
@@ -104,7 +108,11 @@
       {{- range .Site.Menus.main }}
       {{/* 메뉴 .URL 은 이미 baseURL 서브경로(/blog-kr)를 포함 → relURL 을 또 붙이면
            /blog-kr/blog-kr/... 로 이중이 된다. .URL 을 그대로 쓴다(서버/프로덕션 동일). */}}
+      {{- $hide := false }}
+      {{- with .Params.category }}{{ if not (index site.Taxonomies.categories .) }}{{ $hide = true }}{{ end }}{{ end }}
+      {{- if not $hide }}
       <a href="{{ .URL }}">{{ .Name }}</a>
+      {{- end }}
       {{- end }}
     </nav>
     <div class="header-tools">
