@@ -3,6 +3,10 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: [main]
+  # 예약 글(date 가 미래인 글)은 push 가 없는 날엔 안 뜬다 — 일일보고서가 실패한 09-16~18 에 실제로 겪음.
+  # 매일 07:45 KST(=22:45 UTC 전날)에 한 번 빌드해 그날 날짜 글을 노출한다. hugo.toml timeZone=Asia/Seoul.
+  schedule:
+    - cron: "45 22 * * *"
   workflow_dispatch:
 
 permissions:
