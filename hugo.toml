@@ -24,7 +24,7 @@ enableGitInfo = false
 
 [params]
   env = "production"
-  description = "한국 증시 일일 보고서·주간 분석·투자 상식을 데이터 기반으로 정리합니다. 투자 권유가 아닌 정보 제공입니다."
+  description = "한국 증시의 매매 가설을 직접 수집한 데이터로 검증합니다. 계산 방법과 한계, 정정 기록을 함께 공개합니다."
   author = "한국증시 레시피"
   defaultTheme = "auto"
   ShowToc = true
@@ -55,7 +55,7 @@ enableGitInfo = false
 
 [params.homeInfoParams]
   Title = "한국증시 레시피 🍳"
-  Content = "매일의 증시 흐름과 종목 신호를 데이터로 정리합니다. **투자 권유가 아닌 정보 제공**이며, 모든 판단과 책임은 투자자 본인에게 있습니다."
+  Content = "한국 증시의 통념을 데이터로 확인하고 검증 과정을 기록합니다. **투자 권유가 아닌 정보 제공**이며, 모든 판단과 책임은 투자자 본인에게 있습니다."
 
 [markup.tableOfContents]
   startLevel = 2
@@ -86,15 +86,15 @@ enableGitInfo = false
 
 [[menu.main]]
   identifier = "daily"
-  name = "일일보고서"
+  name = "일일 기록"
   url = "/categories/일일보고서/"
-  weight = 10
+  weight = 50
 
 [[menu.main]]
   identifier = "weekly"
-  name = "주간레시피"
+  name = "주간 기록"
   url = "/categories/주간레시피/"
-  weight = 20
+  weight = 60
 
 [[menu.main]]
   identifier = "notes"
@@ -115,7 +115,7 @@ enableGitInfo = false
   identifier = "lab"
   name = "실험노트"
   url = "/categories/실험노트/"
-  weight = 40
+  weight = 10
 
 [[menu.main]]
   identifier = "about"

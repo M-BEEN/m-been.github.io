@@ -1,208 +1,39 @@
 {{ define "main" }}
-{{- $posts    := where .Site.RegularPages "Section" "posts" }}
-{{- $dailies  := where $posts "Params.isreport" true }}
-{{- $weeklies := where $posts "Params.isweekly" true }}
-
-{{/* 메인에 크게 거는 글. '지난 글'에서 이만큼을 빼야 중복이 안 생긴다.
-     예전엔 상단은 isreport 에서 뽑고 아카이브는 전체에서 after 1 로 잘라내서,
-     같은 날짜에 투자상식 글이 있으면 최신 일일보고서가 아래에 또 나왔다. */}}
-{{- $guides   := where $posts "Params.categories" "intersect" (slice "투자상식") }}
-{{- $notes    := where $posts "Params.categories" "intersect" (slice "실험노트") }}
-{{- $topDaily  := first 3 $dailies }}
-{{- $topWeekly := first 2 $weeklies }}
-{{- $topGuide  := first 3 $guides }}
-{{- $topNotes  := first 3 $notes.ByDate.Reverse }}
-{{- $featured  := union (union (union $topDaily $topWeekly) $topGuide) $topNotes }}
-{{- $archive   := complement $featured $posts }}
-
-{{- $latest := "" }}{{ if gt (len $dailies) 0 }}{{ $latest = index $dailies 0 }}{{ end }}
-
 <section class="home-hero">
-  <h1>오늘의 증시, 한 그릇에 담았습니다</h1>
-  <p>매일 아침 코스피·코스닥과 해외 지수, 주도주, 매매 인사이트를 5분 안에 스캔하세요.</p>
+  <h1>증시의 통념을 데이터로 확인합니다</h1>
+  <p>직접 수집한 시세와 운영 기록으로 질문을 검증합니다. 계산 방법, 반례, 틀린 결론까지 남깁니다.</p>
 </section>
-
-{{- with $latest }}
-<section style="padding:4px 0 8px">
-  <div class="snap-grid">
-    {{- range first 4 .Params.snapshot }}
-    <div class="snap">
-      <div class="snap__name">{{ .name }} <span class="tk">{{ .ticker }}</span></div>
-      <div class="snap__val num">{{ .value }}</div>
-      <div class="snap__chg {{ .dir }}"><span class="num">{{ .abs }}</span><span class="pct num">{{ .pct }}</span></div>
-    </div>
-    {{- end }}
-  </div>
-</section>
-{{- end }}
-
-{{/* ── 섹터 전광판 요약 — 최신 보고서에서 오른 업종·내린 업종 양극단만 ──── */}}
-{{- with $latest }}
-{{- $sectors := .Params.sectors }}
-{{- if $sectors }}
-{{/* front matter 의 sectors 는 거래대금 순이다. 여기선 등락률로 다시 정렬해
-     '가장 오른 3개 / 가장 내린 3개'만 보여준다 — 메인에선 그게 궁금한 정보다.
-     전체 전광판은 보고서 안에 있다. */}}
-{{- $bypct := sort $sectors "pct_num" "desc" }}
-<div class="section-label">
-  <h2>섹터 전광판</h2>
-  <a class="more" href="{{ .RelPermalink }}#sectors">전체 보기 →</a>
-</div>
-<div class="heat-strip">
-  {{- range first 3 $bypct }}
-  <div class="heat heat--{{ .heat }}"><span class="heat__name">{{ .name }}</span><span class="heat__pct num">{{ .pct }}</span></div>
-  {{- end }}
-  {{- range last 3 $bypct }}
-  <div class="heat heat--{{ .heat }}"><span class="heat__name">{{ .name }}</span><span class="heat__pct num">{{ .pct }}</span></div>
-  {{- end }}
-</div>
-{{- end }}
-{{- end }}
-
-{{/* ── 일일보고서 ─────────────────────────────────────── */}}
-{{- if gt (len $topDaily) 0 }}
-{{- $head := index $topDaily 0 }}
-{{- $side := after 1 $topDaily }}
-<div class="section-label">
-  <h2>일일보고서</h2>
-  <a class="more" href="{{ "categories/일일보고서/" | relURL }}">전체 보기 →</a>
-</div>
-<div class="feat-grid">
-  <a class="feat-card lg" href="{{ $head.RelPermalink }}">
-    <div>
-      <div class="post-row__meta">
-        <span class="badge badge--cat">일일보고서</span>
-        <span>{{ $head.Date.Format "2006.01.02" }}</span>
-        {{- with $head.Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
-      </div>
-      <h3>{{ $head.Title }}</h3>
-      <p class="post-row__excerpt">{{ $head.Params.lede | truncate 130 }}</p>
-    </div>
-    <div style="display:flex;gap:22px;margin-top:18px">
-      {{- range first 3 $head.Params.snapshot }}
-      <div class="kv" style="text-align:left"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>
-      {{- end }}
-    </div>
-  </a>
-  {{- if gt (len $side) 0 }}
-  <div class="feat-side">
-    {{- range $side }}
+<section aria-labelledby="start-title">
+  <div class="section-label"><h2 id="start-title">하나의 질문, 이어지는 검증</h2></div>
+  <p class="experiment-intro">밤사이 수익은 언제나 더 컸을까요? 짧은 표본에서 시작한 계산과, 기간·대상을 바꾸며 결론을 고친 과정을 함께 읽어 보세요.</p>
+  <div class="grid-2">
+    {{ with .Site.GetPage "/posts/note-gap-overnight" }}
     <a class="feat-card" href="{{ .RelPermalink }}">
-      <div class="post-row__meta">
-        <span class="badge badge--cat">일일보고서</span>
-        <span>{{ .Date.Format "2006.01.02" }}</span>
-      </div>
+      <div class="post-row__meta"><span class="badge badge--soft">01 · 계산 방법</span><span>가상 입력 예제 제공</span></div>
       <h3>{{ .Title }}</h3>
-      <p class="post-row__excerpt">{{ .Params.lede | truncate 90 }}</p>
+      <p class="post-row__excerpt">갭과 장중 수익을 어떻게 나눴는지 설명합니다. 공개 코드는 계산식 확인용이며, 당시 전체 표본의 검증 자료는 아닙니다.</p>
     </a>
-    {{- end }}
+    {{ end }}
+    {{ with .Site.GetPage "/posts/note-overnight-retract" }}
+    <a class="feat-card" href="{{ .RelPermalink }}">
+      <div class="post-row__meta"><span class="badge badge--soft">02 · 결론 다시 보기</span><span>표본과 비교 대상의 변화</span></div>
+      <h3>{{ .Title }}</h3>
+      <p class="post-row__excerpt">기간을 늘리고 ETF·비용·단순 보유와 비교했습니다. 앞선 결론이 어떻게 달라졌는지, 아직 무엇을 확인해야 하는지 기록합니다.</p>
+    </a>
+    {{ end }}
   </div>
-  {{- end }}
-</div>
-{{- end }}
-
-{{/* ── 주간레시피 ─────────────────────────────────────── */}}
-{{- if gt (len $topWeekly) 0 }}
-<div class="section-label">
-  <h2>주간레시피</h2>
-  <a class="more" href="{{ "categories/주간레시피/" | relURL }}">전체 보기 →</a>
-</div>
-<div class="grid-2">
-  {{- range $topWeekly }}
-  <a class="feat-card" href="{{ .RelPermalink }}">
-    <div class="post-row__meta">
-      <span class="badge badge--cat">주간레시피</span>
-      {{- with .Params.week_range }}<span>{{ . }}</span>{{ else }}<span>{{ .Date.Format "2006.01.02" }}</span>{{ end }}
-      {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
-    </div>
-    <h3>{{ .Title }}</h3>
-    <p class="post-row__excerpt">{{ cond (ne .Params.lede "") .Params.lede .Description | truncate 110 }}</p>
-    {{- if .Params.snapshot }}
-    <div style="display:flex;gap:22px;margin-top:16px">
-      {{- range first 3 .Params.snapshot }}
-      <div class="kv" style="text-align:left"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>
-      {{- end }}
-    </div>
-    {{- end }}
-  </a>
-  {{- end }}
-</div>
-{{- end }}
-
-{{- if $topNotes }}
-<section aria-labelledby="experiment-notes-title">
-  <div class="section-label">
-    <h2 id="experiment-notes-title">직접 측정한 실험노트</h2>
-    <a class="more" href="{{ "categories/실험노트/" | relURL }}">전체 보기 →</a>
-  </div>
-  <p class="experiment-intro">익숙한 매매 가설을 데이터와 거래 기록으로 확인합니다. 잘 맞은 결과뿐 아니라 틀린 가설, 계산 방법과 표본의 한계도 함께 남깁니다.</p>
+</section>
+<section aria-labelledby="read-title">
+  <div class="section-label"><h2 id="read-title">관심 있는 질문부터</h2></div>
   <div class="guide-grid">
-    {{- range $topNotes }}
-    <a class="feat-card" href="{{ .RelPermalink }}">
-      <div class="post-row__meta">
-        <span class="badge badge--soft">실험노트</span>
-        <span>{{ .Date.Format "2006.01.02" }}</span>
-        {{- if .Params.reproducibility }}<span class="badge badge--soft">계산식·재현 자료</span>{{ end }}
-      </div>
-      <h3>{{ .Title }}</h3>
-      {{- $excerpt := .Description | default (.Summary | plainify) }}
-      <p class="post-row__excerpt">{{ $excerpt | truncate 130 }}</p>
-    </a>
-    {{- end }}
+    <a class="feat-card" href="{{ "categories/실험노트/" | relURL }}"><h3>실험노트</h3><p class="post-row__excerpt">매매 가설을 측정한 기록입니다. 표본·가정·한계를 함께 읽어 주세요.</p></a>
+    <a class="feat-card" href="{{ "categories/투자상식/" | relURL }}"><h3>투자상식</h3><p class="post-row__excerpt">실험을 읽는 데 필요한 수급, 가격, 시장 제도와 개념을 설명합니다.</p></a>
+    <a class="feat-card" href="{{ "about/" | relURL }}"><h3>자료와 작성 기준</h3><p class="post-row__excerpt">수집 출처, 검수 과정, 공개한 재현 자료의 범위와 정정 방식을 안내합니다.</p></a>
   </div>
 </section>
-{{- end }}
-
-{{/* ── 투자상식 ─────────────────────────────────────────
-     날짜에 묶이지 않아 오래 읽히는 글이라 '지난 글' 더미에 섞이면 금방 묻힌다.
-     별도 섹션으로 올려 홈에서 항상 링크되게 한다. */}}
-{{- if gt (len $topGuide) 0 }}
-<div class="section-label">
-  <h2>투자상식</h2>
-  <a class="more" href="{{ "categories/투자상식/" | relURL }}">전체 보기 →</a>
-</div>
-<div class="guide-grid">
-  {{- range $topGuide }}
-  <a class="feat-card" href="{{ .RelPermalink }}">
-    <div class="post-row__meta">
-      <span class="badge badge--soft">투자상식</span>
-      {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
-    </div>
-    <h3>{{ .Title }}</h3>
-    {{/* 투자상식 글엔 lede·description 이 없다. 그럴 땐 본문 요약으로 채운다. */}}
-    {{- $ex := cond (ne .Params.lede "") .Params.lede .Description }}
-    {{- if not $ex }}{{ $ex = .Summary | plainify }}{{ end }}
-    <p class="post-row__excerpt">{{ $ex | truncate 110 }}</p>
-  </a>
-  {{- end }}
-</div>
-{{- end }}
-
-{{/* ── 지난 글 — 일일·주간·투자상식을 날짜순으로 섞는다 ──── */}}
-{{- if gt (len $archive) 0 }}
-<div class="section-label">
-  <h2>지난 글</h2>
-  <a class="more" href="{{ "posts/" | relURL }}">아카이브 →</a>
-</div>
-<div class="post-list">
-  {{- range first 12 $archive }}
-  <a class="post-row" href="{{ .RelPermalink }}">
-    <div class="post-row__main">
-      <div class="post-row__meta">
-        {{- with .Params.categories }}<span class="badge badge--cat">{{ index . 0 }}</span>{{ end }}
-        <span>{{ .Date.Format "2006.01.02" }}</span>
-        {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
-      </div>
-      <h3 class="post-row__title">{{ .Title }}</h3>
-      <p class="post-row__excerpt">{{ cond (ne .Params.lede "") .Params.lede .Description | truncate 110 }}</p>
-    </div>
-    {{- if .Params.snapshot }}
-    <div class="post-row__mini">
-      {{- range first 2 .Params.snapshot }}<div class="kv"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>{{ end }}
-    </div>
-    {{- end }}
-  </a>
-  {{- end }}
-</div>
-{{- end }}
+<section aria-labelledby="archive-title">
+  <div class="section-label"><h2 id="archive-title">지난 시장 기록</h2><a class="more" href="{{ "posts/" | relURL }}">전체 글 →</a></div>
+  <p class="experiment-intro">일일보고서와 주간레시피는 당시의 관측과 해석을 보관한 기록입니다. 현재 시세나 새로운 매매 신호로 읽지 마세요. 기준 시점·출처·중복 내용을 순차적으로 재검토하고 있습니다.</p>
+  <div class="footer-links"><a href="{{ "categories/일일보고서/" | relURL }}">일일보고서 기록</a><a href="{{ "categories/주간레시피/" | relURL }}">주간레시피 기록</a></div>
+</section>
 {{ end }}
