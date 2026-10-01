@@ -1,3 +1,6 @@
 static/research/gap-overnight/*.csv text eol=lf
 static/research/gap-overnight/*.json text eol=lf
 static/research/gap-overnight/*.py text eol=lf
+archive/** text eol=lf
+static/research/report-verdicts/** text eol=lf
+static/research/compounding/** text eol=lf

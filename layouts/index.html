@@ -4,21 +4,21 @@
   <p>직접 수집한 시세와 운영 기록으로 질문을 검증합니다. 계산 방법, 반례, 틀린 결론까지 남깁니다.</p>
 </section>
 <section aria-labelledby="start-title">
-  <div class="section-label"><h2 id="start-title">하나의 질문, 이어지는 검증</h2></div>
-  <p class="experiment-intro">밤사이 수익은 언제나 더 컸을까요? 짧은 표본에서 시작한 계산과, 기간·대상을 바꾸며 결론을 고친 과정을 함께 읽어 보세요.</p>
+  <div class="section-label"><h2 id="start-title">직접 확인할 수 있는 계산부터</h2></div>
+  <p class="experiment-intro">입력과 코드를 내려받아 같은 결과가 나오는지 확인해 보세요. 실제 관측 자료와 가상 예제, 아직 검증하지 못한 결과를 구분합니다.</p>
   <div class="grid-2">
-    {{ with .Site.GetPage "/posts/note-gap-overnight" }}
+    {{ with .Site.GetPage "/posts/note-verdict-backtest" }}
     <a class="feat-card" href="{{ .RelPermalink }}">
-      <div class="post-row__meta"><span class="badge badge--soft">01 · 계산 방법</span><span>가상 입력 예제 제공</span></div>
+      <div class="post-row__meta"><span class="badge badge--soft">01 · 원문 다시 세기</span><span>실제 판정 자료 558행 공개</span></div>
       <h3>{{ .Title }}</h3>
-      <p class="post-row__excerpt">갭과 장중 수익을 어떻게 나눴는지 설명합니다. 공개 코드는 계산식 확인용이며, 당시 전체 표본의 검증 자료는 아닙니다.</p>
+      <p class="post-row__excerpt">487건의 집계는 맞았지만, 장전 매수 가능 시점은 확인되지 않았습니다. 성과표를 철회하고 확인한 건수와 남은 검증을 공개합니다.</p>
     </a>
     {{ end }}
-    {{ with .Site.GetPage "/posts/note-overnight-retract" }}
+    {{ with .Site.GetPage "/posts/guide-volatility-drag" }}
     <a class="feat-card" href="{{ .RelPermalink }}">
-      <div class="post-row__meta"><span class="badge badge--soft">02 · 결론 다시 보기</span><span>표본과 비교 대상의 변화</span></div>
+      <div class="post-row__meta"><span class="badge badge--soft">02 · 계산 방법</span><span>가상 경로와 실행 코드</span></div>
       <h3>{{ .Title }}</h3>
-      <p class="post-row__excerpt">기간을 늘리고 ETF·비용·단순 보유와 비교했습니다. 앞선 결론이 어떻게 달라졌는지, 아직 무엇을 확인해야 하는지 기록합니다.</p>
+      <p class="post-row__excerpt">−10% 다음 +10%는 왜 본전이 아닐까요? 가격이 정말 제자리로 돌아오는 경우와 일간 2배 상품까지 세 가지 경로로 계산합니다.</p>
     </a>
     {{ end }}
   </div>
@@ -28,12 +28,7 @@
   <div class="guide-grid">
     <a class="feat-card" href="{{ "categories/실험노트/" | relURL }}"><h3>실험노트</h3><p class="post-row__excerpt">매매 가설을 측정한 기록입니다. 표본·가정·한계를 함께 읽어 주세요.</p></a>
     <a class="feat-card" href="{{ "categories/투자상식/" | relURL }}"><h3>투자상식</h3><p class="post-row__excerpt">실험을 읽는 데 필요한 수급, 가격, 시장 제도와 개념을 설명합니다.</p></a>
-    <a class="feat-card" href="{{ "about/" | relURL }}"><h3>자료와 작성 기준</h3><p class="post-row__excerpt">수집 출처, 검수 과정, 공개한 재현 자료의 범위와 정정 방식을 안내합니다.</p></a>
+    <a class="feat-card" href="{{ "research-methods/" | relURL }}"><h3>자료와 재현 방법</h3><p class="post-row__excerpt">내려받을 수 있는 입력과 코드, 재현 가능한 결과와 아직 확인하지 못한 범위를 안내합니다.</p></a>
   </div>
-</section>
-<section aria-labelledby="archive-title">
-  <div class="section-label"><h2 id="archive-title">지난 시장 기록</h2><a class="more" href="{{ "posts/" | relURL }}">전체 글 →</a></div>
-  <p class="experiment-intro">일일보고서와 주간레시피는 당시의 관측과 해석을 보관한 기록입니다. 현재 시세나 새로운 매매 신호로 읽지 마세요. 기준 시점·출처·중복 내용을 순차적으로 재검토하고 있습니다.</p>
-  <div class="footer-links"><a href="{{ "categories/일일보고서/" | relURL }}">일일보고서 기록</a><a href="{{ "categories/주간레시피/" | relURL }}">주간레시피 기록</a></div>
 </section>
 {{ end }}

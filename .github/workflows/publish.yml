@@ -55,6 +55,11 @@ jobs:
         # 전부 구 도메인으로 빌드됐다(로컬 빌드는 정상이라 더 늦게 발견됐다).
         run: |
           hugo --gc --minify
+      - name: Verify archives, internal links, and published calculations
+        run: |
+          python3 scripts/verify-editorial-archive.py public
+          python3 static/research/report-verdicts/reproduce.py --source-root .
+          python3 static/research/compounding/reproduce.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
