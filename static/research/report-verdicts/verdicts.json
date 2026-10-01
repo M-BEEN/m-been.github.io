@@ -1,0 +1,5582 @@
+[
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 7,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 8,
+    "name": "한화오션",
+    "code": "042660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 11,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 12,
+    "name": "LG이노텍",
+    "code": "011070.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "card_position": 14,
+    "name": "성문전자",
+    "code": "014910.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 2,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 3,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 9,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 10,
+    "name": "리노공업",
+    "code": "058470.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "card_position": 11,
+    "name": "이오테크닉스",
+    "code": "039030.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 1,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 2,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 3,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 8,
+    "name": "LS ELECTRIC",
+    "code": "010120.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 9,
+    "name": "대한전선",
+    "code": "001440.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 10,
+    "name": "원익IPS",
+    "code": "240810.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 11,
+    "name": "제주반도체",
+    "code": "080220.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 13,
+    "name": "비츠로셀",
+    "code": "082920.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "card_position": 14,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 2,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 4,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 6,
+    "name": "대원전선",
+    "code": "006340",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 7,
+    "name": "HD현대중공업",
+    "code": "329180",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 9,
+    "name": "피에스케이",
+    "code": "319660",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "card_position": 10,
+    "name": "리가켐바이오",
+    "code": "141080",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 7,
+    "name": "알테오젠",
+    "code": "196170",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 8,
+    "name": "삼성바이오로직스",
+    "code": "207940",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 9,
+    "name": "에이피알",
+    "code": "278470",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 10,
+    "name": "이수페타시스",
+    "code": "007660",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "card_position": 11,
+    "name": "한미반도체",
+    "code": "042700",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 4,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 7,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 8,
+    "name": "원익IPS",
+    "code": "240810.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 9,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "card_position": 10,
+    "name": "한화세미텍",
+    "code": "272210.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 2,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 7,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 9,
+    "name": "심텍",
+    "code": "222800.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 10,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "card_position": 11,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 0,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 4,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 8,
+    "name": "에코프로비엠",
+    "code": "247540",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 9,
+    "name": "HPSP",
+    "code": "403870",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 10,
+    "name": "한양이엔지",
+    "code": "271940",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "card_position": 11,
+    "name": "한화솔루션",
+    "code": "009830",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-01-daily",
+    "date_label": "2026-07-01",
+    "asof": "2026-06-30",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-01-daily",
+    "date_label": "2026-07-01",
+    "asof": "2026-06-30",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-01-daily",
+    "date_label": "2026-07-01",
+    "asof": "2026-06-30",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-01-daily",
+    "date_label": "2026-07-01",
+    "asof": "2026-06-30",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-01-daily",
+    "date_label": "2026-07-01",
+    "asof": "2026-06-30",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 6,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 7,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 8,
+    "name": "한국항공우주",
+    "code": "047810.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "card_position": 9,
+    "name": "OCI홀딩스",
+    "code": "010060.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-03-daily",
+    "date_label": "2026-07-03",
+    "asof": "2026-07-03",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-03-daily",
+    "date_label": "2026-07-03",
+    "asof": "2026-07-03",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-03-daily",
+    "date_label": "2026-07-03",
+    "asof": "2026-07-03",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-03-daily",
+    "date_label": "2026-07-03",
+    "asof": "2026-07-03",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-03-daily",
+    "date_label": "2026-07-03",
+    "asof": "2026-07-03",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 7,
+    "name": "한화오션",
+    "code": "042660",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 10,
+    "name": "포스코DX",
+    "code": "022100",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "card_position": 11,
+    "name": "한미반도체",
+    "code": "042700",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 7,
+    "name": "한화오션",
+    "code": "042660",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "card_position": 8,
+    "name": "DB하이텍",
+    "code": "000990",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 7,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 8,
+    "name": "HD한국조선해양",
+    "code": "009540.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 9,
+    "name": "에코프로",
+    "code": "086520.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "card_position": 10,
+    "name": "LG에너지솔루션",
+    "code": "373220.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 0,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 7,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "card_position": 8,
+    "name": "가온칩스",
+    "code": "399720.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 7,
+    "name": "원익IPS",
+    "code": "240810",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 8,
+    "name": "피에스케이",
+    "code": "319660",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 9,
+    "name": "이오테크닉스",
+    "code": "039030",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 10,
+    "name": "리노공업",
+    "code": "058470",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 11,
+    "name": "LS ELECTRIC",
+    "code": "010120",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 12,
+    "name": "HD현대일렉트릭",
+    "code": "267260",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "card_position": 13,
+    "name": "현대차",
+    "code": "005380",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 7,
+    "name": "SK이노베이션",
+    "code": "096770.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 8,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 9,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "card_position": 10,
+    "name": "STX그린로지스",
+    "code": "465770.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 7,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 8,
+    "name": "HD현대중공업",
+    "code": "329180.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 10,
+    "name": "가온칩스",
+    "code": "399720.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 11,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 12,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "card_position": 13,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 7,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 8,
+    "name": "디앤디파마텍",
+    "code": "347850.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 9,
+    "name": "한화오션",
+    "code": "042660.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "card_position": 11,
+    "name": "한미약품",
+    "code": "128940.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 10,
+    "name": "SK스퀘어",
+    "code": "402340.KS",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 11,
+    "name": "파라다이스",
+    "code": "034230.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 12,
+    "name": "롯데관광개발",
+    "code": "032350.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "card_position": 13,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 7,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 8,
+    "name": "SK이노베이션",
+    "code": "096770.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 9,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 12,
+    "name": "포스코인터내셔널",
+    "code": "047050.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "card_position": 13,
+    "name": "현대로템",
+    "code": "064350.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 8,
+    "name": "레인보우로보틱스",
+    "code": "277810.KQ",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 11,
+    "name": "에스앤에스텍",
+    "code": "101490.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 12,
+    "name": "LS일렉트릭",
+    "code": "010120.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "card_position": 13,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 7,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "card_position": 13,
+    "name": "삼성바이오로직스",
+    "code": "207940.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 1,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 7,
+    "name": "삼성E&A",
+    "code": "028050.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 8,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 9,
+    "name": "삼성SDI",
+    "code": "006400.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 10,
+    "name": "LG에너지솔루션",
+    "code": "373220.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 11,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "card_position": 12,
+    "name": "에코프로비엠",
+    "code": "247540.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-27-daily",
+    "date_label": "2026-07-27",
+    "asof": "2026-07-24",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-27-daily",
+    "date_label": "2026-07-27",
+    "asof": "2026-07-24",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-27-daily",
+    "date_label": "2026-07-27",
+    "asof": "2026-07-24",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-27-daily",
+    "date_label": "2026-07-27",
+    "asof": "2026-07-24",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-27-daily",
+    "date_label": "2026-07-27",
+    "asof": "2026-07-24",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-28-daily",
+    "date_label": "2026-07-28",
+    "asof": "2026-07-27",
+    "card_position": 0,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-28-daily",
+    "date_label": "2026-07-28",
+    "asof": "2026-07-27",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-28-daily",
+    "date_label": "2026-07-28",
+    "asof": "2026-07-27",
+    "card_position": 2,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-28-daily",
+    "date_label": "2026-07-28",
+    "asof": "2026-07-27",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-28-daily",
+    "date_label": "2026-07-28",
+    "asof": "2026-07-27",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "card_position": 7,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 1,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 2,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 13,
+    "name": "현대무벡스",
+    "code": "319400.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "card_position": 14,
+    "name": "SK이노베이션",
+    "code": "096770.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 3,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 7,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 8,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 9,
+    "name": "셀트리온",
+    "code": "068270.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "card_position": 10,
+    "name": "LG에너지솔루션",
+    "code": "373220.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 7,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 8,
+    "name": "심텍",
+    "code": "222800.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 9,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "card_position": 13,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 3,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 7,
+    "name": "레인보우로보틱스",
+    "code": "277810.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 8,
+    "name": "효성중공업",
+    "code": "298040.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 9,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 10,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "card_position": 11,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 9,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 10,
+    "name": "에코프로비엠",
+    "code": "247540.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 11,
+    "name": "에이비엘바이오",
+    "code": "298380.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 12,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "card_position": 13,
+    "name": "대한항공",
+    "code": "003490.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 2,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 3,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 6,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 7,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 8,
+    "name": "LG에너지솔루션",
+    "code": "373220.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 9,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "card_position": 10,
+    "name": "대한항공",
+    "code": "003490.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 7,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 8,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 9,
+    "name": "OCI홀딩스",
+    "code": "010060.KS",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 10,
+    "name": "한화솔루션",
+    "code": "009830.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "card_position": 14,
+    "name": "큐리언트",
+    "code": "115180.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 0,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 1,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 4,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 8,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 9,
+    "name": "한화솔루션",
+    "code": "009830.KS",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 10,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 11,
+    "name": "에코프로비엠",
+    "code": "247540.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 13,
+    "name": "OCI홀딩스",
+    "code": "010060.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "card_position": 14,
+    "name": "HMM",
+    "code": "011200.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 6,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 7,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 8,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 9,
+    "name": "원익IPS",
+    "code": "240810.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 10,
+    "name": "에코프로",
+    "code": "086520.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 11,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "card_position": 12,
+    "name": "SK이노베이션",
+    "code": "096770.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 7,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 8,
+    "name": "이수페타시스",
+    "code": "007660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 9,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 10,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "card_position": 11,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 2,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 7,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 12,
+    "name": "이오테크닉스",
+    "code": "039030.KQ",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "card_position": 14,
+    "name": "한국콜마",
+    "code": "161890.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 2,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 9,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 10,
+    "name": "원익IPS",
+    "code": "240810.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 11,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "card_position": 12,
+    "name": "퍼스텍",
+    "code": "010820.KS",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 6,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 7,
+    "name": "테크윙",
+    "code": "089030.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 8,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 9,
+    "name": "한화오션",
+    "code": "042660.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 10,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 11,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "card_position": 12,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 7,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 8,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 9,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 10,
+    "name": "HMM",
+    "code": "011200.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 11,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 12,
+    "name": "KB금융",
+    "code": "105560.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 13,
+    "name": "동진쎄미켐",
+    "code": "005290.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "card_position": 14,
+    "name": "로보티즈",
+    "code": "108490.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 7,
+    "name": "삼성바이오로직스",
+    "code": "207940.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 8,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 9,
+    "name": "리노공업",
+    "code": "058470.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 13,
+    "name": "현대차",
+    "code": "005380.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "card_position": 14,
+    "name": "고려아연",
+    "code": "010130.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 7,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 8,
+    "name": "SK스퀘어",
+    "code": "402340.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 9,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 10,
+    "name": "카카오",
+    "code": "035720.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 11,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "card_position": 12,
+    "name": "테크윙",
+    "code": "089030.KQ",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 1,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 7,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 8,
+    "name": "에코프로비엠",
+    "code": "247540.KQ",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 9,
+    "name": "KB금융",
+    "code": "105560.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 12,
+    "name": "한화솔루션",
+    "code": "009830.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "card_position": 13,
+    "name": "카카오",
+    "code": "035720.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 7,
+    "name": "한미약품",
+    "code": "128940.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 8,
+    "name": "에코프로비엠",
+    "code": "247540.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 9,
+    "name": "LG에너지솔루션",
+    "code": "373220.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 10,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 11,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 12,
+    "name": "현대차",
+    "code": "005380.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "card_position": 13,
+    "name": "카카오",
+    "code": "035720.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 7,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 8,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 9,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "card_position": 14,
+    "name": "대한항공",
+    "code": "003490.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 7,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 8,
+    "name": "이오테크닉스",
+    "code": "039030.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 11,
+    "name": "안랩",
+    "code": "053800.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 12,
+    "name": "가온칩스",
+    "code": "399720.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 13,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "card_position": 14,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 2,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 7,
+    "name": "심텍",
+    "code": "222800.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 8,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 9,
+    "name": "KB금융",
+    "code": "105560.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 12,
+    "name": "산일전기",
+    "code": "062040.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "card_position": 13,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 6,
+    "name": "KB금융",
+    "code": "105560.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 7,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 8,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 9,
+    "name": "삼성전기",
+    "code": "009150.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 10,
+    "name": "지니언스",
+    "code": "263860.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "card_position": 13,
+    "name": "카카오",
+    "code": "035720.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 2,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 3,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 7,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 8,
+    "name": "SK이노베이션",
+    "code": "096770.KS",
+    "verdict": "분할매수",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 9,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 10,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 11,
+    "name": "알테오젠",
+    "code": "196170.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "card_position": 12,
+    "name": "현대차",
+    "code": "005380.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 7,
+    "name": "SK이노베이션",
+    "code": "096770.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 8,
+    "name": "삼성생명",
+    "code": "032830.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 9,
+    "name": "KB금융",
+    "code": "105560.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 12,
+    "name": "리노공업",
+    "code": "058470.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 13,
+    "name": "대한항공",
+    "code": "003490.KS",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "card_position": 14,
+    "name": "에코프로비엠",
+    "code": "247540.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 6,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 7,
+    "name": "HD현대중공업",
+    "code": "329180.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 8,
+    "name": "한화오션",
+    "code": "042660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 9,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 10,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 11,
+    "name": "LG이노텍",
+    "code": "011070.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 12,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 13,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "card_position": 14,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 1,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 9,
+    "name": "LG에너지솔루션",
+    "code": "373220.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 10,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 11,
+    "name": "레인보우로보틱스",
+    "code": "277810.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "card_position": 13,
+    "name": "한국전력",
+    "code": "015760.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 2,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 5,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "매수 후보",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 7,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 8,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 9,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 10,
+    "name": "효성중공업",
+    "code": "298040.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 11,
+    "name": "HD현대일렉트릭",
+    "code": "267260.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "card_position": 12,
+    "name": "주성엔지니어링",
+    "code": "036930.KQ",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 3,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 4,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 6,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "매수 후보",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 7,
+    "name": "롯데케미칼",
+    "code": "011170.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 8,
+    "name": "S-Oil",
+    "code": "010950.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 9,
+    "name": "두산에너빌리티",
+    "code": "034020.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 10,
+    "name": "HD현대중공업",
+    "code": "329180.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 11,
+    "name": "주성엔지니어링",
+    "code": "036930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "card_position": 12,
+    "name": "심텍",
+    "code": "222800.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 7,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 8,
+    "name": "HD현대중공업",
+    "code": "329180.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 9,
+    "name": "HMM",
+    "code": "011200.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 10,
+    "name": "한화에어로스페이스",
+    "code": "012450.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 11,
+    "name": "파인엠텍",
+    "code": "441270.KQ",
+    "verdict": "매수 후보",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "card_position": 12,
+    "name": "대한항공",
+    "code": "003490.KS",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 4,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 6,
+    "name": "샌즈랩",
+    "code": "411080",
+    "verdict": "주의/회피",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 7,
+    "name": "신한지주",
+    "code": "055550",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 8,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "card_position": 9,
+    "name": "삼성전기",
+    "code": "009150",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 4,
+    "name": "삼성전자",
+    "code": "005930",
+    "verdict": "주의/회피",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 8,
+    "name": "지니언스",
+    "code": "263860",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 9,
+    "name": "코스메카코리아",
+    "code": "241710",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 10,
+    "name": "삼성중공업",
+    "code": "010140",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "card_position": 11,
+    "name": "SK하이닉스",
+    "code": "000660",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 7,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "눌림목 대기",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "card_position": 11,
+    "name": "테크윙",
+    "code": "089030.KQ",
+    "verdict": "관망",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 0,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "분할매수",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 1,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "분할매수",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 4,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 5,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "눌림목 대기",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 6,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 10,
+    "name": "하나마이크론",
+    "code": "067310.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 11,
+    "name": "SFA반도체",
+    "code": "036540.KQ",
+    "verdict": "주의/회피",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "card_position": 12,
+    "name": "한미반도체",
+    "code": "042700.KS",
+    "verdict": "눌림목 대기",
+    "kind": "신호주"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 2,
+    "name": "네이버",
+    "code": "035420.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 3,
+    "name": "LG전자",
+    "code": "066570.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 4,
+    "name": "삼성전자",
+    "code": "005930.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 5,
+    "name": "금호타이어",
+    "code": "073240.KS",
+    "verdict": "관망",
+    "kind": "관심종목"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 6,
+    "name": "에이치엘비",
+    "code": "028300.KQ",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 7,
+    "name": "에쓰오일",
+    "code": "010950.KS",
+    "verdict": "관망",
+    "kind": "주도주"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "card_position": 8,
+    "name": "SK하이닉스",
+    "code": "000660.KS",
+    "verdict": "관망",
+    "kind": "신호주"
+  }
+]

@@ -85,16 +85,10 @@ enableGitInfo = false
   tag = "tags"
 
 [[menu.main]]
-  identifier = "daily"
-  name = "일일 기록"
-  url = "/categories/일일보고서/"
-  weight = 50
-
-[[menu.main]]
-  identifier = "weekly"
-  name = "주간 기록"
-  url = "/categories/주간레시피/"
-  weight = 60
+  identifier = "methods"
+  name = "자료·재현"
+  url = "/research-methods/"
+  weight = 40
 
 [[menu.main]]
   identifier = "notes"
