@@ -2,7 +2,7 @@
        table 에 직접 display:block 을 주면 가로 스크롤은 되지만 테두리 박스만 100% 로
        늘어나고 내용은 shrink-to-fit 으로 남아 어긋난다. 스크롤은 래퍼가 맡는다. */ -}}
 <div class="table-wrap">
-  <table>
+  <table{{ with .Page.Params.table_class }} class="{{ . }}"{{ end }}>
     {{- with .THead }}
     <thead>
       {{- range . }}

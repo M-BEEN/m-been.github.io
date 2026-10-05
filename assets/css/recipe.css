@@ -412,6 +412,12 @@ table.dt .src { color: var(--accent); font-size: 11.5px; font-weight: 600; white
 .page-prose table tr:last-child td { border-bottom: 0; }
 /* 숫자 열은 자릿수를 맞춰 세로로 읽히게 */
 .page-prose table td { font-variant-numeric: tabular-nums; }
+/* 자료 비교표는 제목 열이 한 글자 폭으로 줄지 않도록 읽을 수 있는 폭을 유지한다. */
+.page-prose table.research-comparison { min-width: 42rem; }
+.page-prose .research-comparison th:first-child,
+.page-prose .research-comparison td:first-child {
+  min-width: 9em; word-break: keep-all; overflow-wrap: normal;
+}
 
 /* ---------- 주간레시피 에세이(.weekly-prose = art-content 안의 page-prose) ---------- */
 /* 본문 헤딩이 목차 앵커 대상 — 스티키 헤더에 가리지 않게 오프셋 */
