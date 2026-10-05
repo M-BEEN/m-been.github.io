@@ -1,0 +1,612 @@
+[
+  {
+    "report_id": "2026-06-19-daily",
+    "date_label": "2026-06-19",
+    "asof": "2026-06-18",
+    "original_path": "content/posts/2026-06-19-daily.md",
+    "archive_path": "archive/reports/2026-06-19-daily.md",
+    "sha256": "264259cd67165296a95f8002d575a0dc661008b902e1a49d6c30217fd309b1e3",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-19-daily.md"
+  },
+  {
+    "report_id": "2026-06-20-daily",
+    "date_label": "2026-06-20",
+    "asof": "2026-06-19",
+    "original_path": "content/posts/2026-06-20-daily.md",
+    "archive_path": "archive/reports/2026-06-20-daily.md",
+    "sha256": "37af3f8b1ba67b6eeb016219268e79633c95ccb600a7b34029fe89f7d94219d9",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-20-daily.md"
+  },
+  {
+    "report_id": "2026-06-23-daily",
+    "date_label": "2026-06-23",
+    "asof": "2026-06-22",
+    "original_path": "content/posts/2026-06-23-daily.md",
+    "archive_path": "archive/reports/2026-06-23-daily.md",
+    "sha256": "ea493ac33e040aecd811d3151b17d4d60ff4b77293769bbdbac7a4d50b00abd7",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-23-daily.md"
+  },
+  {
+    "report_id": "2026-06-24-daily",
+    "date_label": "2026-06-24",
+    "asof": "2026-06-23",
+    "original_path": "content/posts/2026-06-24-daily.md",
+    "archive_path": "archive/reports/2026-06-24-daily.md",
+    "sha256": "ac1e39435de56c0a8d7cca67b73cdb562e11cbc2161e6bac65285daa6cf423c4",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-24-daily.md"
+  },
+  {
+    "report_id": "2026-06-25-daily",
+    "date_label": "2026-06-25",
+    "asof": "2026-06-24",
+    "original_path": "content/posts/2026-06-25-daily.md",
+    "archive_path": "archive/reports/2026-06-25-daily.md",
+    "sha256": "0dc4a8b5553085f0c73c2bffc0580b74c3c70156beb526a301fc7363d2d202a0",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-25-daily.md"
+  },
+  {
+    "report_id": "2026-06-26-daily",
+    "date_label": "2026-06-26",
+    "asof": "2026-06-25",
+    "original_path": "content/posts/2026-06-26-daily.md",
+    "archive_path": "archive/reports/2026-06-26-daily.md",
+    "sha256": "23ac9d8d3e06480bfae3a22f3a44c6762c140c9b850b4e11f51343ca6876d07d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-26-daily.md"
+  },
+  {
+    "report_id": "2026-06-29-daily",
+    "date_label": "2026-06-29",
+    "asof": "2026-06-26",
+    "original_path": "content/posts/2026-06-29-daily.md",
+    "archive_path": "archive/reports/2026-06-29-daily.md",
+    "sha256": "33d8b738a17ce0fc84a185ad96d5dea446a0c974b3bf648844970ba6c986008d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-29-daily.md"
+  },
+  {
+    "report_id": "2026-06-30-daily",
+    "date_label": "2026-06-30",
+    "asof": "2026-06-29",
+    "original_path": "content/posts/2026-06-30-daily.md",
+    "archive_path": "archive/reports/2026-06-30-daily.md",
+    "sha256": "bc0aa31341b212693b1df23a46b7a269890e68811eba08fd70778f8b87c6c0cb",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-06-30-daily.md"
+  },
+  {
+    "report_id": "2026-07-01-daily",
+    "date_label": "2026-07-01",
+    "asof": "2026-06-30",
+    "original_path": "content/posts/2026-07-01-daily.md",
+    "archive_path": "archive/reports/2026-07-01-daily.md",
+    "sha256": "1ab102231d4dbe74dd33153b7e439ddac2a5553b3455b6813dd2cb4f8bdfabbf",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-01-daily.md"
+  },
+  {
+    "report_id": "2026-07-02-daily",
+    "date_label": "2026-07-02",
+    "asof": "2026-07-01",
+    "original_path": "content/posts/2026-07-02-daily.md",
+    "archive_path": "archive/reports/2026-07-02-daily.md",
+    "sha256": "40990a1da32a7b667d2a5ada7d3f2cb6094ad56a017926f2949cd5f0b27c0c58",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-02-daily.md"
+  },
+  {
+    "report_id": "2026-07-03-daily",
+    "date_label": "2026-07-03",
+    "asof": "2026-07-03",
+    "original_path": "content/posts/2026-07-03-daily.md",
+    "archive_path": "archive/reports/2026-07-03-daily.md",
+    "sha256": "8b7967f76296c5f4b6e6de8dabfc9879f3aea2d169a8f1d37435e69745efc11b",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-03-daily.md"
+  },
+  {
+    "report_id": "2026-07-07-daily",
+    "date_label": "2026-07-07",
+    "asof": "2026-07-06",
+    "original_path": "content/posts/2026-07-07-daily.md",
+    "archive_path": "archive/reports/2026-07-07-daily.md",
+    "sha256": "7b1dab4f07b4078686230f9125c8ff797d3fce39d3c6827bbf56ce95b4d3cff5",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-07-daily.md"
+  },
+  {
+    "report_id": "2026-07-08-daily",
+    "date_label": "2026-07-08",
+    "asof": "2026-07-07",
+    "original_path": "content/posts/2026-07-08-daily.md",
+    "archive_path": "archive/reports/2026-07-08-daily.md",
+    "sha256": "6ad5705a95bd3380865bf4b4352d0ec2c6c1f75979ac05bc192a10ff53a4116c",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-08-daily.md"
+  },
+  {
+    "report_id": "2026-07-09-daily",
+    "date_label": "2026-07-09",
+    "asof": "2026-07-08",
+    "original_path": "content/posts/2026-07-09-daily.md",
+    "archive_path": "archive/reports/2026-07-09-daily.md",
+    "sha256": "0713560d36c546c1f6c0bbebbfcf05c4cef7ab09cbb24fc5a87cd3f47357ec9a",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-09-daily.md"
+  },
+  {
+    "report_id": "2026-07-10-daily",
+    "date_label": "2026-07-10",
+    "asof": "2026-07-09",
+    "original_path": "content/posts/2026-07-10-daily.md",
+    "archive_path": "archive/reports/2026-07-10-daily.md",
+    "sha256": "08f1b7b240c5b5a11042d9aca291a9e9b4a274ce5c42d1409525564674e87298",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-10-daily.md"
+  },
+  {
+    "report_id": "2026-07-13-daily",
+    "date_label": "2026-07-13",
+    "asof": "2026-07-10",
+    "original_path": "content/posts/2026-07-13-daily.md",
+    "archive_path": "archive/reports/2026-07-13-daily.md",
+    "sha256": "473926cac9da51f67c12f72687a08cc8b8962d2f23acc82e45a012c690783389",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-13-daily.md"
+  },
+  {
+    "report_id": "2026-07-14-daily",
+    "date_label": "2026-07-14",
+    "asof": "2026-07-13",
+    "original_path": "content/posts/2026-07-14-daily.md",
+    "archive_path": "archive/reports/2026-07-14-daily.md",
+    "sha256": "2da6bdaaa47d39158f8446898e2fd0d73217e9d263d36c0b8dd716f650d747c9",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-14-daily.md"
+  },
+  {
+    "report_id": "2026-07-15-daily",
+    "date_label": "2026-07-15",
+    "asof": "2026-07-14",
+    "original_path": "content/posts/2026-07-15-daily.md",
+    "archive_path": "archive/reports/2026-07-15-daily.md",
+    "sha256": "1c947e1fc9aa82f44735ff727dd9258f824d70d548f19b5c1acd5e6df794628b",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-15-daily.md"
+  },
+  {
+    "report_id": "2026-07-16-daily",
+    "date_label": "2026-07-16",
+    "asof": "2026-07-15",
+    "original_path": "content/posts/2026-07-16-daily.md",
+    "archive_path": "archive/reports/2026-07-16-daily.md",
+    "sha256": "04f5f97677a25f5e12b03b8c193c39cf2a1c87368aae40d24c0dedfabc56be6d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-16-daily.md"
+  },
+  {
+    "report_id": "2026-07-17-daily",
+    "date_label": "2026-07-17",
+    "asof": "2026-07-16",
+    "original_path": "content/posts/2026-07-17-daily.md",
+    "archive_path": "archive/reports/2026-07-17-daily.md",
+    "sha256": "4a4bcf12ca52eb1c566f4d00b1c7cfbbc8d98ef9fc7ffe51a574bd3e97d7f0cf",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-17-daily.md"
+  },
+  {
+    "report_id": "2026-07-21-daily",
+    "date_label": "2026-07-21",
+    "asof": "2026-07-20",
+    "original_path": "content/posts/2026-07-21-daily.md",
+    "archive_path": "archive/reports/2026-07-21-daily.md",
+    "sha256": "97a9f1185d083c0b333a4f2a5ada6344e8b3c9fbf325149795ccc2c59194b837",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-21-daily.md"
+  },
+  {
+    "report_id": "2026-07-22-daily",
+    "date_label": "2026-07-22",
+    "asof": "2026-07-21",
+    "original_path": "content/posts/2026-07-22-daily.md",
+    "archive_path": "archive/reports/2026-07-22-daily.md",
+    "sha256": "1ded526945df9253dec2abd63e78ffd00457e5a687324652981af9d436c82e0a",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-22-daily.md"
+  },
+  {
+    "report_id": "2026-07-23-daily",
+    "date_label": "2026-07-23",
+    "asof": "2026-07-22",
+    "original_path": "content/posts/2026-07-23-daily.md",
+    "archive_path": "archive/reports/2026-07-23-daily.md",
+    "sha256": "4eb95eacba737e55d293bdfcf03d768198ae879e67f4bbad11ef382e54562944",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-23-daily.md"
+  },
+  {
+    "report_id": "2026-07-24-daily",
+    "date_label": "2026-07-24",
+    "asof": "2026-07-23",
+    "original_path": "content/posts/2026-07-24-daily.md",
+    "archive_path": "archive/reports/2026-07-24-daily.md",
+    "sha256": "24bf61fe9f5ee93e964807c5321570555b0439e3e2619d2f0c78ec3635606e6d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-24-daily.md"
+  },
+  {
+    "report_id": "2026-07-27-daily",
+    "date_label": "2026-07-27",
+    "asof": "2026-07-24",
+    "original_path": "content/posts/2026-07-27-daily.md",
+    "archive_path": "archive/reports/2026-07-27-daily.md",
+    "sha256": "5c770c81c67b9204955c76dc46d802faf930f9aa9db776841d33b4f33fdc8edd",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-27-daily.md"
+  },
+  {
+    "report_id": "2026-07-28-daily",
+    "date_label": "2026-07-28",
+    "asof": "2026-07-27",
+    "original_path": "content/posts/2026-07-28-daily.md",
+    "archive_path": "archive/reports/2026-07-28-daily.md",
+    "sha256": "908e438e1d86f67db05329ddf36c3a3e3e8746d61fcc8622ae46c99e21423a1d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-28-daily.md"
+  },
+  {
+    "report_id": "2026-07-29-daily",
+    "date_label": "2026-07-29",
+    "asof": "2026-07-28",
+    "original_path": "content/posts/2026-07-29-daily.md",
+    "archive_path": "archive/reports/2026-07-29-daily.md",
+    "sha256": "c0552848127a7b738da3b82d953862c2323e1e5ea660b065c80da628ec423157",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-29-daily.md"
+  },
+  {
+    "report_id": "2026-07-30-daily",
+    "date_label": "2026-07-30",
+    "asof": "2026-07-29",
+    "original_path": "content/posts/2026-07-30-daily.md",
+    "archive_path": "archive/reports/2026-07-30-daily.md",
+    "sha256": "21555d0bae760d11fe0f5404a2846427e32d3b0b7d6739c765818b74557a3ee8",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-30-daily.md"
+  },
+  {
+    "report_id": "2026-07-31-daily",
+    "date_label": "2026-07-31",
+    "asof": "2026-07-30",
+    "original_path": "content/posts/2026-07-31-daily.md",
+    "archive_path": "archive/reports/2026-07-31-daily.md",
+    "sha256": "ce449ab805ed2e4d97be3685512df898406c0e9fc6fba7d26dcc7b403bf15f5d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-07-31-daily.md"
+  },
+  {
+    "report_id": "2026-08-03-daily",
+    "date_label": "2026-08-03",
+    "asof": "2026-07-31",
+    "original_path": "content/posts/2026-08-03-daily.md",
+    "archive_path": "archive/reports/2026-08-03-daily.md",
+    "sha256": "a168560e4026945e71856c77986b7305c463436832ecfa30360f6c1bd6acb52c",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-03-daily.md"
+  },
+  {
+    "report_id": "2026-08-04-daily",
+    "date_label": "2026-08-04",
+    "asof": "2026-08-03",
+    "original_path": "content/posts/2026-08-04-daily.md",
+    "archive_path": "archive/reports/2026-08-04-daily.md",
+    "sha256": "ce824edd84f62047d8f1db3d73dfb6b6ea5e29b23eeaf7f3608ab8dae69955c8",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-04-daily.md"
+  },
+  {
+    "report_id": "2026-08-05-daily",
+    "date_label": "2026-08-05",
+    "asof": "2026-08-04",
+    "original_path": "content/posts/2026-08-05-daily.md",
+    "archive_path": "archive/reports/2026-08-05-daily.md",
+    "sha256": "2e4b87c6e496ba9409a764faf097d804d48a87d5e4e8d487a0aa8522fd6d372d",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-05-daily.md"
+  },
+  {
+    "report_id": "2026-08-06-daily",
+    "date_label": "2026-08-06",
+    "asof": "2026-08-05",
+    "original_path": "content/posts/2026-08-06-daily.md",
+    "archive_path": "archive/reports/2026-08-06-daily.md",
+    "sha256": "38e550d5285ecf1e6975c638a6d4b232a7c11aadf3461903c8c67ca90685333f",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-06-daily.md"
+  },
+  {
+    "report_id": "2026-08-07-daily",
+    "date_label": "2026-08-07",
+    "asof": "2026-08-06",
+    "original_path": "content/posts/2026-08-07-daily.md",
+    "archive_path": "archive/reports/2026-08-07-daily.md",
+    "sha256": "b8945508b3cc081743dad0e1faeb94fe126a705fc96ad6ec9f72caa16fa5c995",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-07-daily.md"
+  },
+  {
+    "report_id": "2026-08-10-daily",
+    "date_label": "2026-08-10",
+    "asof": "2026-08-07",
+    "original_path": "content/posts/2026-08-10-daily.md",
+    "archive_path": "archive/reports/2026-08-10-daily.md",
+    "sha256": "89087040db29e706c04756266e607ad2c69abc26e44f72ab095b8dd965d9292f",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-10-daily.md"
+  },
+  {
+    "report_id": "2026-08-11-daily",
+    "date_label": "2026-08-11",
+    "asof": "2026-08-10",
+    "original_path": "content/posts/2026-08-11-daily.md",
+    "archive_path": "archive/reports/2026-08-11-daily.md",
+    "sha256": "848aa6a094bb7384de7c69a234d177ac48308a8c9620d2bfa2d7ee56d0c1677c",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-11-daily.md"
+  },
+  {
+    "report_id": "2026-08-12-daily",
+    "date_label": "2026-08-12",
+    "asof": "2026-08-11",
+    "original_path": "content/posts/2026-08-12-daily.md",
+    "archive_path": "archive/reports/2026-08-12-daily.md",
+    "sha256": "461e875b9fa641f6a14bdff402474dcf2b602250226f5e66180b32e95c771166",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-12-daily.md"
+  },
+  {
+    "report_id": "2026-08-13-daily",
+    "date_label": "2026-08-13",
+    "asof": "2026-08-12",
+    "original_path": "content/posts/2026-08-13-daily.md",
+    "archive_path": "archive/reports/2026-08-13-daily.md",
+    "sha256": "3943aabaa73722f233e8a9ac61af9798e7df40bd18e393c32b9bb44ec96de692",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-13-daily.md"
+  },
+  {
+    "report_id": "2026-08-14-daily",
+    "date_label": "2026-08-14",
+    "asof": "2026-08-13",
+    "original_path": "content/posts/2026-08-14-daily.md",
+    "archive_path": "archive/reports/2026-08-14-daily.md",
+    "sha256": "cd5d9d0509c6238b282288874818f459039db3c134bbe0a483b9001bb5550fc3",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-14-daily.md"
+  },
+  {
+    "report_id": "2026-08-18-daily",
+    "date_label": "2026-08-18",
+    "asof": "2026-08-14",
+    "original_path": "content/posts/2026-08-18-daily.md",
+    "archive_path": "archive/reports/2026-08-18-daily.md",
+    "sha256": "672e2b2ab420a0fe86f108e81ed69f1d8b32f1d4e2bc19100daecadcf9b03ef3",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-18-daily.md"
+  },
+  {
+    "report_id": "2026-08-19-daily",
+    "date_label": "2026-08-19",
+    "asof": "2026-08-18",
+    "original_path": "content/posts/2026-08-19-daily.md",
+    "archive_path": "archive/reports/2026-08-19-daily.md",
+    "sha256": "663cc4d5ea2d63c9163a68b7afac78e08d567da853bede96dd0557df0145617a",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-19-daily.md"
+  },
+  {
+    "report_id": "2026-08-20-daily",
+    "date_label": "2026-08-20",
+    "asof": "2026-08-19",
+    "original_path": "content/posts/2026-08-20-daily.md",
+    "archive_path": "archive/reports/2026-08-20-daily.md",
+    "sha256": "a13123471ff02793d6bbc635e840806ea38a61a0bdc2380678e07c60f4b3b033",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-20-daily.md"
+  },
+  {
+    "report_id": "2026-08-21-daily",
+    "date_label": "2026-08-21",
+    "asof": "2026-08-20",
+    "original_path": "content/posts/2026-08-21-daily.md",
+    "archive_path": "archive/reports/2026-08-21-daily.md",
+    "sha256": "3aab091bbb19468034f1af87e70ea2168fdb2c11e53e672cc204c8026aefe908",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-21-daily.md"
+  },
+  {
+    "report_id": "2026-08-24-daily",
+    "date_label": "2026-08-24",
+    "asof": "2026-08-21",
+    "original_path": "content/posts/2026-08-24-daily.md",
+    "archive_path": "archive/reports/2026-08-24-daily.md",
+    "sha256": "2b66a9496afb4d131f1ce0b6dcee86401f40186e4e33f90fdb547da05bdb9c0b",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-24-daily.md"
+  },
+  {
+    "report_id": "2026-08-25-daily",
+    "date_label": "2026-08-25",
+    "asof": "2026-08-24",
+    "original_path": "content/posts/2026-08-25-daily.md",
+    "archive_path": "archive/reports/2026-08-25-daily.md",
+    "sha256": "39d883098ca6ff8fb2e7673fab6c11def0f23620614d80799fe5414ce0c175fd",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-25-daily.md"
+  },
+  {
+    "report_id": "2026-08-26-daily",
+    "date_label": "2026-08-26",
+    "asof": "2026-08-25",
+    "original_path": "content/posts/2026-08-26-daily.md",
+    "archive_path": "archive/reports/2026-08-26-daily.md",
+    "sha256": "9b770aee35b0311a83155f7b384ab144d778e163abaa4a33e4c6c6f9bb383386",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-26-daily.md"
+  },
+  {
+    "report_id": "2026-08-27-daily",
+    "date_label": "2026-08-27",
+    "asof": "2026-08-26",
+    "original_path": "content/posts/2026-08-27-daily.md",
+    "archive_path": "archive/reports/2026-08-27-daily.md",
+    "sha256": "15e96245247ed963dd3fa782842471203ae681de2768593b1e2cdc7595b9e2ec",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-27-daily.md"
+  },
+  {
+    "report_id": "2026-08-28-daily",
+    "date_label": "2026-08-28",
+    "asof": "2026-08-27",
+    "original_path": "content/posts/2026-08-28-daily.md",
+    "archive_path": "archive/reports/2026-08-28-daily.md",
+    "sha256": "aa8eb157a45686856e73fe4f01a1c881bd8acbd578c93d532f5353e6080fb5a0",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-28-daily.md"
+  },
+  {
+    "report_id": "2026-08-31-daily",
+    "date_label": "2026-08-31",
+    "asof": "2026-08-28",
+    "original_path": "content/posts/2026-08-31-daily.md",
+    "archive_path": "archive/reports/2026-08-31-daily.md",
+    "sha256": "608d7960055a07bc9f7be0c1b67f51f894018e6cfaae8af32d4c86db3bd2b45f",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-08-31-daily.md"
+  },
+  {
+    "report_id": "2026-09-01-daily",
+    "date_label": "2026-09-01",
+    "asof": "2026-08-31",
+    "original_path": "content/posts/2026-09-01-daily.md",
+    "archive_path": "archive/reports/2026-09-01-daily.md",
+    "sha256": "6db68da6d4ad7c831d745e73446383028df045e2748659c26aebafd00c6f80ae",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-01-daily.md"
+  },
+  {
+    "report_id": "2026-09-02-daily",
+    "date_label": "2026-09-02",
+    "asof": "2026-09-01",
+    "original_path": "content/posts/2026-09-02-daily.md",
+    "archive_path": "archive/reports/2026-09-02-daily.md",
+    "sha256": "eea0b903ec8f892908c418fa934b3ed0cdf8b4f30adf72145c84ecf77cb5920e",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-02-daily.md"
+  },
+  {
+    "report_id": "2026-09-03-daily",
+    "date_label": "2026-09-03",
+    "asof": "2026-09-02",
+    "original_path": "content/posts/2026-09-03-daily.md",
+    "archive_path": "archive/reports/2026-09-03-daily.md",
+    "sha256": "441d1f99177e5a3bd06692b5f379fdc5eca32ab75f735cb08c2d65e92522e7fe",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-03-daily.md"
+  },
+  {
+    "report_id": "2026-09-04-daily",
+    "date_label": "2026-09-04",
+    "asof": "2026-09-03",
+    "original_path": "content/posts/2026-09-04-daily.md",
+    "archive_path": "archive/reports/2026-09-04-daily.md",
+    "sha256": "7dbf2d230113a28f5b8ececd7c74ee9b2dc0dddc2f425105e659ff7e29519938",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-04-daily.md"
+  },
+  {
+    "report_id": "2026-09-08-daily",
+    "date_label": "2026-09-08",
+    "asof": "2026-09-07",
+    "original_path": "content/posts/2026-09-08-daily.md",
+    "archive_path": "archive/reports/2026-09-08-daily.md",
+    "sha256": "fb4d292c20b4d2b5a1981a7625513c7be03633884254c9482085cca04d93a70b",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-08-daily.md"
+  },
+  {
+    "report_id": "2026-09-09-daily",
+    "date_label": "2026-09-09",
+    "asof": "2026-09-09",
+    "original_path": "content/posts/2026-09-09-daily.md",
+    "archive_path": "archive/reports/2026-09-09-daily.md",
+    "sha256": "7655f65cac6613f62d26b80946292ead8797f4d8982d7b1a8ef70af6a10563f8",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-09-daily.md"
+  },
+  {
+    "report_id": "2026-09-11-daily",
+    "date_label": "2026-09-11",
+    "asof": "2026-09-10",
+    "original_path": "content/posts/2026-09-11-daily.md",
+    "archive_path": "archive/reports/2026-09-11-daily.md",
+    "sha256": "f232479163520c7bbda0a1b97465d6b64ade1e6599b2bc8ee0e21c01afbda1e4",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-11-daily.md"
+  },
+  {
+    "report_id": "2026-09-14-daily",
+    "date_label": "2026-09-14",
+    "asof": "2026-09-11",
+    "original_path": "content/posts/2026-09-14-daily.md",
+    "archive_path": "archive/reports/2026-09-14-daily.md",
+    "sha256": "6b22037d8248308d61c17e094f5eebea7211ec88a0b93ff976a3cf066c77e380",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-14-daily.md"
+  },
+  {
+    "report_id": "2026-09-15-daily",
+    "date_label": "2026-09-15",
+    "asof": "2026-09-14",
+    "original_path": "content/posts/2026-09-15-daily.md",
+    "archive_path": "archive/reports/2026-09-15-daily.md",
+    "sha256": "05bffe6fa853fa1a9899498e9c9204e10437103e4c365d0d6c96fa04405f7b7f",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-15-daily.md"
+  },
+  {
+    "report_id": "2026-09-21-daily",
+    "date_label": "2026-09-21",
+    "asof": "2026-09-18",
+    "original_path": "content/posts/2026-09-21-daily.md",
+    "archive_path": "archive/reports/2026-09-21-daily.md",
+    "sha256": "8cfe100c902bee31902522f104d52dbadde469fd0d0c954af6427908e9212ee0",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-21-daily.md"
+  },
+  {
+    "report_id": "2026-09-22-daily",
+    "date_label": "2026-09-22",
+    "asof": "2026-09-21",
+    "original_path": "content/posts/2026-09-22-daily.md",
+    "archive_path": "archive/reports/2026-09-22-daily.md",
+    "sha256": "e686c121a5888b9c70e100530ef0c343acab73845830e1a5f4bd968ee3734a3f",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-22-daily.md"
+  },
+  {
+    "report_id": "2026-09-29-daily",
+    "date_label": "2026-09-29",
+    "asof": "2026-09-23",
+    "original_path": "content/posts/2026-09-29-daily.md",
+    "archive_path": "archive/reports/2026-09-29-daily.md",
+    "sha256": "ff64f9ff2a7baa171357c72ce7a1bbcb2672499f94208593d1631530d82968fc",
+    "first_available_at": null,
+    "snapshot_url": "https://github.com/M-BEEN/m-been.github.io/blob/5023a2422e8f212307a97e388128ff9111363cc7/content/posts/2026-09-29-daily.md"
+  }
+]
