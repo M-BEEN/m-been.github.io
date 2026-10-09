@@ -730,6 +730,149 @@
       "sha256": "a8f7123d29a49fd647d7bdcb8389f7cb560b73909f208d0c36326360b55ddec2",
       "bytes": 7220,
       "kind": "experiment"
+    },
+    {
+      "slug": "guide-analyst-consensus",
+      "url": "https://yieldrecipe.com/posts/guide-analyst-consensus/",
+      "original_path": "content/posts/guide-analyst-consensus.md",
+      "archive_path": "archive/learning-renewal/guide-analyst-consensus.md",
+      "sha256": "a29f9d59480f1fd521ed11718bb0370bf5e7a58324891f96fdaa47953b5fcd7e",
+      "bytes": 10140,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-averaging-in",
+      "url": "https://yieldrecipe.com/posts/guide-averaging-in/",
+      "original_path": "content/posts/guide-averaging-in.md",
+      "archive_path": "archive/learning-renewal/guide-averaging-in.md",
+      "sha256": "94803393ad62e1f06733b7cf4bff13eaeb10532069752af6ea377a3d0ee50ece",
+      "bytes": 9971,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-capital-actions",
+      "url": "https://yieldrecipe.com/posts/guide-capital-actions/",
+      "original_path": "content/posts/guide-capital-actions.md",
+      "archive_path": "archive/learning-renewal/guide-capital-actions.md",
+      "sha256": "406287cf818b230dd6df828fce80e2954c60a52c2d09f7572ab6ce9b2ceb011f",
+      "bytes": 9804,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-circuit-breaker",
+      "url": "https://yieldrecipe.com/posts/guide-circuit-breaker/",
+      "original_path": "content/posts/guide-circuit-breaker.md",
+      "archive_path": "archive/learning-renewal/guide-circuit-breaker.md",
+      "sha256": "cd08b7c10637c30053e2027c54ed8ca7754de72bc9ccfbba0949cdd2ff1db324",
+      "bytes": 8955,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-disposition-effect",
+      "url": "https://yieldrecipe.com/posts/guide-disposition-effect/",
+      "original_path": "content/posts/guide-disposition-effect.md",
+      "archive_path": "archive/learning-renewal/guide-disposition-effect.md",
+      "sha256": "e47a4ad04fdb945d24c039787e5858258403a13df9d83222bf3a02874b9b2f47",
+      "bytes": 9985,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-dividend-ex-date",
+      "url": "https://yieldrecipe.com/posts/guide-dividend-ex-date/",
+      "original_path": "content/posts/guide-dividend-ex-date.md",
+      "archive_path": "archive/learning-renewal/guide-dividend-ex-date.md",
+      "sha256": "cdf26bbde35ea890775ef50e8fee08994412dd06367cc87f932967408a4b3fd8",
+      "bytes": 10498,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-earnings-reaction",
+      "url": "https://yieldrecipe.com/posts/guide-earnings-reaction/",
+      "original_path": "content/posts/guide-earnings-reaction.md",
+      "archive_path": "archive/learning-renewal/guide-earnings-reaction.md",
+      "sha256": "ea78686368950ee1e128ca804b784707fa14e27b73dabed78a085901d5df6b13",
+      "bytes": 9702,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-investor-flow",
+      "url": "https://yieldrecipe.com/posts/guide-investor-flow/",
+      "original_path": "content/posts/guide-investor-flow.md",
+      "archive_path": "archive/learning-renewal/guide-investor-flow.md",
+      "sha256": "356d421c0f91a1cc685817194e44d2f69b09755626ca6e9a8e8aab678234d083",
+      "bytes": 12853,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-ipo-first-day",
+      "url": "https://yieldrecipe.com/posts/guide-ipo-first-day/",
+      "original_path": "content/posts/guide-ipo-first-day.md",
+      "archive_path": "archive/learning-renewal/guide-ipo-first-day.md",
+      "sha256": "b68a6612cb3236e5792bf545bca165810aaad72ab710b43d5f64535f6598c752",
+      "bytes": 10169,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-margin-calls",
+      "url": "https://yieldrecipe.com/posts/guide-margin-calls/",
+      "original_path": "content/posts/guide-margin-calls.md",
+      "archive_path": "archive/learning-renewal/guide-margin-calls.md",
+      "sha256": "0610ad2325844002dbfc53cc2ac4f77d4d5e83ee36b32d1262d899c34d80821a",
+      "bytes": 9678,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-order-types",
+      "url": "https://yieldrecipe.com/posts/guide-order-types/",
+      "original_path": "content/posts/guide-order-types.md",
+      "archive_path": "archive/learning-renewal/guide-order-types.md",
+      "sha256": "6a2506d1f021e06a695c533c7f0786e54a9693a03ace6ef3098bf751c9894aaa",
+      "bytes": 10396,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-short-selling",
+      "url": "https://yieldrecipe.com/posts/guide-short-selling/",
+      "original_path": "content/posts/guide-short-selling.md",
+      "archive_path": "archive/learning-renewal/guide-short-selling.md",
+      "sha256": "1bb179bcbfedad54b8d7ec4cded7e0d0bc4cba1b443fbe6cabd14d29bf1cf15b",
+      "bytes": 5340,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
+    },
+    {
+      "slug": "guide-volatility-index",
+      "url": "https://yieldrecipe.com/posts/guide-volatility-index/",
+      "original_path": "content/posts/guide-volatility-index.md",
+      "archive_path": "archive/learning-renewal/guide-volatility-index.md",
+      "sha256": "b84541a2ccfd3efc2f453db05747814396f145c7ba56498db700a96623325e5f",
+      "bytes": 9881,
+      "kind": "guide",
+      "withdrawn_at": "2026-10-09",
+      "reason": "Learning scope narrowed; original sources and time-sensitive claims require separate verification."
     }
   ]
 }

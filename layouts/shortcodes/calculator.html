@@ -1,0 +1,28 @@
+{{ $kind := .Get 0 }}
+<section class="calculator" data-calculator="{{ $kind }}" aria-label="{{ .Page.Title }} 입력과 결과">
+<h2>숫자를 바꿔서 확인해 보세요</h2>
+<form><fieldset disabled style="border:0;padding:0;margin:0"><legend class="input-help">모든 값은 설명용 가정입니다. 실제 계좌를 연결하지 않습니다.</legend>
+<div class="calc-fields">
+{{ if eq $kind "compound" }}
+<label>시작 금액 (원)<input name="initial" type="number" value="10000" min="0.01" max="1000000000000" step="any" required></label>
+<label>회복을 계산할 손실률 (%)<input name="loss" type="number" value="20" min="0" max="100" step="any" required></label>
+<label class="wide">기간별 수익률 (%)<textarea name="rates" required aria-describedby="rates-help">-10, 10</textarea><span id="rates-help" class="input-help">같은 길이의 기간을 쉼표 또는 공백으로 구분하세요. 예: -10, 10 · 최대 100개</span></label>
+{{ else if eq $kind "costs" }}
+<label>시작 금액 (원)<input name="initial" type="number" value="1000000" min="0.01" max="1000000000000" step="any" required></label>
+<label>거래 횟수 (회)<input name="rounds" type="number" value="100" min="1" max="1000" step="1" required></label>
+<label>회당 비용 전 수익률 (%)<input name="gross" type="number" value="0.3" min="-99.99" max="100" step="any" required></label>
+<label>회당 왕복 비용률 가정 (%)<input name="fee" type="number" value="0.2" min="0" max="99.99" step="any" required><span class="input-help">현재 세율·수수료가 아닌 임의의 예제 값입니다.</span></label>
+{{ else if eq $kind "position" }}
+<label>가정한 총자금 (원)<input name="capital" type="number" value="10000000" min="1" max="1000000000000" step="any" required></label>
+<label>한 거래의 손실 예산 (%)<input name="risk" type="number" value="1" min="0.001" max="100" step="any" required></label>
+<label>매수가 가정 (원)<input name="entry" type="number" value="50000" min="0.01" step="any" required></label>
+<label>청산 체결가 가정 (원)<input name="stop" type="number" value="47500" min="0" step="any" required></label>
+<label>왕복 비용률 가정 (%)<input name="fee" type="number" value="0.2" min="0" max="99.99" step="any" required></label>
+<label>투자 상한 / 총자금 (%)<input name="cap" type="number" value="20" min="0.001" max="100" step="any" required></label>
+{{ end }}
+</div><div class="calc-actions"><button class="calc-button" type="submit">계산하기</button><button class="calc-reset" type="reset">예제로 되돌리기</button><button class="calc-reset" type="button" data-download hidden>계산 내역 CSV</button></div>
+</fieldset></form>
+<p class="calc-error" role="alert" data-error hidden></p><div class="calc-result" role="status" aria-live="polite" aria-atomic="true" data-result hidden></div>
+<small>입력은 이 브라우저에서만 계산합니다. 저장하거나 전송하지 않으며, CSV는 내려받기를 눌렀을 때만 생성됩니다.</small>
+<noscript><p>계산 도구를 사용하려면 JavaScript를 켜 주세요. 아래 공식과 예제는 그대로 읽을 수 있습니다.</p></noscript>
+</section>

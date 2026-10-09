@@ -1,0 +1,54 @@
+{
+  "fictional_win_rate": {
+    "input_pct": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      -2,
+      -10
+    ],
+    "win_pct": 80,
+    "mean_pct": -0.4,
+    "median_pct": 1.0,
+    "sequential_final": 95507.961436
+  },
+  "independent_comparisons": {
+    "1": 5.0,
+    "6": 26.490811,
+    "20": 64.151408
+  },
+  "fixed_costs": {
+    "initial": 1000000,
+    "gross_pct": 0.3,
+    "cost_pct": 0.2,
+    "rounds": 100,
+    "before": 1349252.719366,
+    "after": 1105115.697721
+  },
+  "position": {
+    "shares": 38,
+    "amount": 1900000,
+    "reserved_cost": 3800.0,
+    "planned_loss": 98800.0,
+    "gap_exit_loss": 193800.0
+  },
+  "etf": {
+    "premium_pct": 2.0,
+    "premium_unwind_pct": -1.960784,
+    "fx_down_pct": 1.2,
+    "fx_up_pct": 18.8
+  },
+  "valuation": {
+    "eps": 1000,
+    "bps": 5000,
+    "per": 10,
+    "pbr": 2,
+    "end_equity_return_pct": 20,
+    "average_equity_return_pct": 25
+  }
+}

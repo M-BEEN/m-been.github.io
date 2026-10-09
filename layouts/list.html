@@ -1,32 +1,8 @@
 {{ define "main" }}
-<section class="home-hero">
-  <h1>{{ if .Data.Singular }}{{ .Title }} {{ .Data.Singular }}{{ else }}{{ .Title }}{{ end }}</h1>
-  {{- with .Description }}<p>{{ . }}</p>{{ end }}
-</section>
-
-{{- $pages := .Pages }}
-{{- if gt (len $pages) 0 }}
-<div class="post-list" style="margin-top:18px">
-  {{- range $pages }}
-  <a class="post-row" href="{{ .RelPermalink }}">
-    <div class="post-row__main">
-      <div class="post-row__meta">
-        {{- with .Params.categories }}<span class="badge badge--cat">{{ index . 0 }}</span>{{ end }}
-        <span>{{ .Date.Format "2006.01.02" }}</span>
-        {{- with .Params.reading }}<span class="sep"></span><span>읽기 {{ . }}분</span>{{ end }}
-      </div>
-      <h3 class="post-row__title">{{ .Title }}</h3>
-      <p class="post-row__excerpt">{{ cond (ne .Params.lede "") .Params.lede .Description | truncate 110 }}</p>
-    </div>
-    {{- if .Params.snapshot }}
-    <div class="post-row__mini">
-      {{- range first 2 .Params.snapshot }}<div class="kv"><div class="k">{{ .name }}</div><div class="v {{ .dir }} num">{{ .pct }}</div></div>{{ end }}
-    </div>
-    {{- end }}
-  </a>
-  {{- end }}
-</div>
-{{- else }}
-<p style="color:var(--text-muted);padding:30px 0">아직 글이 없습니다.</p>
-{{- end }}
+<section class="hub-intro home-hero"><span class="eyebrow">YIELD RECIPE LIBRARY</span><h1>{{ .Title }}</h1>{{ with .Description }}<p>{{ . }}</p>{{ end }}</section>
+{{ with .Content }}<div class="prose hub-intro">{{ . }}</div>{{ end }}
+{{ if gt (len .Pages) 0 }}
+{{ if eq .Section "posts" }}<div class="library-search"><label for="library-search">글 찾기</label><input id="library-search" type="search" placeholder="수익률, 비용, 표본…" data-library-search><span class="filter-count" data-filter-count aria-live="polite"></span></div>{{ end }}
+<div class="learning-grid two" data-library>{{ range .Pages }}{{ partial "learning-card.html" . }}{{ end }}</div><p data-no-results hidden>일치하는 글이 없습니다. 다른 단어로 찾아보세요.</p>
+{{ else }}<p>이 분류에 공개된 글이 없습니다. <a class="text-link" href="/posts/">학습 노트 전체 보기</a></p>{{ end }}
 {{ end }}
