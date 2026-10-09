@@ -1,0 +1,14 @@
+{
+  "provider": "Higgsfield CLI",
+  "model": "recraft_v4_1",
+  "model_type": "vector",
+  "job_id": "2826a4e9-8300-417c-94d8-b3c2c4a19faa",
+  "generated_at": "2026-10-09",
+  "original": "higgsfield-original.svg",
+  "web_variant": "yieldrecipe-mark.svg",
+  "adjustments": [
+    "Square viewport tightened for small icon use",
+    "Forest green normalized to site color #245c42",
+    "Original C2PA-bearing output retained separately; derived web SVG omits invalidated metadata"
+  ]
+}

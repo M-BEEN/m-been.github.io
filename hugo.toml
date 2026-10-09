@@ -13,7 +13,7 @@ defaultContentLanguage = "ko"
 # 날짜 없는 date 프런트매터를 KST 자정으로 해석 — cron이 08:00 KST(=전날 23:00 UTC)에
 # 돌 때 당일 글이 UTC 기준 미래가 되어 buildFuture=false 로 누락되던 문제 방지.
 timeZone = "Asia/Seoul"
-title = "한국증시 레시피"
+title = "수익률 레시피"
 # 커스텀 레이아웃(layouts/) 사용 — PaperMod 미사용(recipe 디자인 포팅)
 enableRobotsTXT = true
 enableEmoji = true
@@ -24,8 +24,8 @@ enableGitInfo = false
 
 [params]
   env = "production"
-  description = "한국 증시의 매매 가설을 직접 수집한 데이터로 검증합니다. 계산 방법과 한계, 정정 기록을 함께 공개합니다."
-  author = "한국증시 레시피"
+  description = "복리 수익률, 거래 비용, 손실 예산을 직접 계산하며 투자 데이터를 읽는 법을 배웁니다. 가상 예제와 실제 원자료를 구분하고 코드와 정정 기록을 공개합니다."
+  author = "M-BEEN"
   defaultTheme = "auto"
   ShowToc = true
   TocOpen = false
@@ -36,13 +36,9 @@ enableGitInfo = false
   ShowWordCount = false
   ShowShareButtons = false
   hideFooter = false
-  # Google AdSense 게시자 ID('ca-pub-XXXXXXXXXXXXXXXX').
-  # ⚠ '승인 후'가 아니라 **신청 전에** 채워야 한다 — 애드센스는 사이트에 코드가 올라가 있어야
-  #   검토를 시작한다. 비어 있으면 "사이트에 연결할 수 없음"으로 검토가 진행되지 않는다.
-  #   게시자 ID 는 애드센스 가입 직후(사이트 승인 전) 바로 발급된다.
-  # 채우면 <head> 에 두 가지가 함께 출력된다 — 소유확인 메타태그 + 광고 스크립트.
-  # 애드센스가 요구하는 확인 방식이 셋(스크립트 / 메타태그 / ads.txt) 중 무엇이든 대응된다.
+  # Verification is separate from ad serving. Configure consent in AdSense before opting in.
   adsenseClient = "ca-pub-1025105664734067"
+  adsenseEnabled = false
   # 구글 서치콘솔 'HTML 태그' 인증 코드(content 값만). 서치콘솔에서 발급받아 붙여넣으면
   # <head> 에 google-site-verification 메타태그가 출력된다. 인증 후에도 남겨둘 것.
   googleSiteVerification = "DUgARfMVJZfQkfIT17I0JUnQv5zYUiwe7VbRH8eZIcQ"
@@ -53,17 +49,13 @@ enableGitInfo = false
   #   새 코드를 발급한다. 옛 코드를 그대로 두면 소유확인이 안 된다 — URL 변경 시 재발급 필수.
   naverSiteVerification = "f559a0c77705e3528f35866236b7eff21fb04ec0"
 
-[params.homeInfoParams]
-  Title = "한국증시 레시피 🍳"
-  Content = "한국 증시의 통념을 데이터로 확인하고 검증 과정을 기록합니다. **투자 권유가 아닌 정보 제공**이며, 모든 판단과 책임은 투자자 본인에게 있습니다."
-
 [markup.tableOfContents]
   startLevel = 2
   endLevel = 3
   ordered = false
 
 [markup.goldmark.renderer]
-  unsafe = true
+  unsafe = false
 
 # 취소선 확장을 끈다. GFM strikethrough 는 `~~양쪽~~` 뿐 아니라 `~한쪽~` 도 취소선으로
 # 처리한다. 그런데 본문에는 `1976~2022년`, `08:00~08:50`, `520~560억달러` 같은 범위 표기가
@@ -84,41 +76,28 @@ enableGitInfo = false
   category = "categories"
   tag = "tags"
 
+
 [[menu.main]]
-  identifier = "methods"
-  name = "자료·재현"
+  name = "처음 오셨다면"
+  url = "/learn/"
+  weight = 10
+
+[[menu.main]]
+  name = "계산 도구"
+  url = "/tools/"
+  weight = 20
+
+[[menu.main]]
+  name = "학습 노트"
+  url = "/posts/"
+  weight = 30
+
+[[menu.main]]
+  name = "자료·코드"
   url = "/research-methods/"
   weight = 40
 
 [[menu.main]]
-  identifier = "notes"
-  name = "투자상식"
-  url = "/categories/투자상식/"
-  weight = 30
-
-[[menu.main]]
-  identifier = "technical"
-  name = "종목분석"
-  url = "/categories/종목분석/"
-  weight = 25
-  # 글이 0편이면 헤더에서 숨긴다(빈 목록 페이지 = 얇은 페이지). baseof.html 이 params.category 로 개수 확인.
-  [menu.main.params]
-    category = "종목분석"
-
-[[menu.main]]
-  identifier = "lab"
-  name = "실험노트"
-  url = "/categories/실험노트/"
-  weight = 10
-
-[[menu.main]]
-  identifier = "about"
   name = "소개"
   url = "/about/"
-  weight = 80
-
-[[menu.main]]
-  identifier = "contact"
-  name = "연락처"
-  url = "/contact/"
-  weight = 90
+  weight = 50

@@ -1,6 +1,8 @@
 name: Deploy Hugo site to Pages
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
   # 예약 글(date 가 미래인 글)은 push 가 없는 날엔 안 뜬다 — 일일보고서가 실패한 09-16~18 에 실제로 겪음.
@@ -11,12 +13,10 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # 동시 배포 1건으로 제한(머지 연타 시 충돌 방지). 진행 중 배포는 취소하지 않음.
 concurrency:
-  group: pages
+  group: pages-${{ github.event.pull_request.number || 'production' }}
   cancel-in-progress: false
 
 defaults:
@@ -41,8 +41,17 @@ jobs:
           # 테마 서브모듈(PaperMod)은 쓰지 않는다 — layouts/ 가 전부 커스텀이다.
           fetch-depth: 0
       - name: Setup Pages
+        if: github.event_name != 'pull_request'
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -58,14 +67,24 @@ jobs:
       - name: Verify archives, internal links, and published calculations
         run: |
           python3 scripts/verify-editorial-archive.py public
+          python3 scripts/verify-learning-site.py public
+          node --test tests/calculations.test.mjs
+          python3 -m unittest discover -s tests -v
           python3 static/research/report-verdicts/reproduce.py --source-root .
           python3 static/research/compounding/reproduce.py
+          python3 static/research/learning/reproduce.py
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
